@@ -7,3 +7,4 @@ In the future i want to improve all the program, with a web interfaz, change de 
   - Autodetect Origin and Destiny folder
   - Improve Regedex
   - Notification methods
+  - rss webcomics like El Vosque or Hi Adventure cast
