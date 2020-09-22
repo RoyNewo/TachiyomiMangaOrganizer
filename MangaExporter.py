@@ -107,7 +107,7 @@ def primero(dic, finalpath, namefile):
 
 
 def main():
-    with open('/home/cristian/Github/MangaExporter/mangas.json') as json_file:
+    with open('/home/cristian/Github/TachiyomiMangaOrganizer/mangas.json') as json_file:
         mangas = json.load(json_file)
     path = "/media/cristian/Datos/Comics/Tachiyomi"
     dirs = os.listdir(path)
@@ -142,11 +142,11 @@ def main():
                                 if mangas[error]['funcion'] == "completo":
                                     completo(mangas[error], path4, file3)
                                 if mangas[error]['funcion'] == "ultimo":
-                                    print(destino)
+                                    # print(destino)
                                     print(file3)
                                     ultimo(mangas[error], path4, file3)
                                 if mangas[error]['funcion'] == "primero":
-                                    print(destino)
+                                    # print(destino)
                                     print(file3)
                                     primero(mangas[error], path4, file3)
 
