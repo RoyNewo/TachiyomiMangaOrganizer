@@ -107,6 +107,8 @@ def primero(dic, finalpath, namefile):
 
 
 def main():
+    os.system("adb connect 192.168.1.166:5555")
+    os.system("adb pull /storage/emulated/0/Tachiyomi /media/cristian/Datos/Comics")
     with open('/home/cristian/Github/TachiyomiMangaOrganizer/mangas.json') as json_file:
         mangas = json.load(json_file)
     path = "/media/cristian/Datos/Comics/Tachiyomi"
@@ -150,6 +152,7 @@ def main():
                                     print(file3)
                                     primero(mangas[error], path4, file3)
 
+    os.system('adb shell "find /storage/emulated/0/Tachiyomi/ -type d -mindepth 3 -exec rm -rf "{}" \;"')
     # with open("/home/cristian/Github/MangaExporter/mangas2.json", "w") as outfile:
     #     json.dump(mangas2, outfile)
 
