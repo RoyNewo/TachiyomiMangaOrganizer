@@ -14,11 +14,12 @@ def send(msg):
     Send a message to a telegram user or group specified on chatId
     chat_id must be a number!
     """
-    mnsj = "Siguientes Comics/Mangas se han descargado:\n\n"
-    for string in msg:
-        mnsj = mnsj + string
-    bot = telegram.Bot(token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
-    bot.sendMessage(chat_id=-275028186, text=mnsj)
+    if msg:
+    	mnsj = "Siguientes Comics/Mangas se han descargado:\n\n"
+    	for string in msg:
+        	mnsj = mnsj + string
+    	bot = telegram.Bot(token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
+    	bot.sendMessage(chat_id=-275028186, text=mnsj)
 
 def isfloat(x):
     try:
