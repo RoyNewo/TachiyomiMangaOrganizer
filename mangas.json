@@ -987,5 +987,13 @@
         "Series" : "Needless",
         "Volume" : "2004",
         "Publisher" : "Shueisha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/Webtoons.com (EN)/Sarah's Scribbles": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Sarah's Scribbles (2016)",
+        "name": "Sarah's Scribbles (2016) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Sarah's Scribbles",
+        "Volume" : "2016",
+        "Publisher" : "Webtoon"
     }
 }
