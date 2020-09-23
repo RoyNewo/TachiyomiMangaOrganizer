@@ -14,9 +14,11 @@ def send(msg):
     Send a message to a telegram user or group specified on chatId
     chat_id must be a number!
     """
-    mensaje = "Descargado " + msg
+    mnsj = "Siguientes Comics/Mangas se han descargado:\n\n"
+    for string in msg:
+        mnsj = mnsj + string
     bot = telegram.Bot(token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
-    bot.sendMessage(chat_id=-275028186, text=mensaje)
+    bot.sendMessage(chat_id=-275028186, text=mnsj)
 
 def isfloat(x):
     try:
@@ -51,7 +53,7 @@ def generatexml(dic, finalpath, numero):
     tree.write(filename, encoding='utf-8', xml_declaration=True)
 
 
-def completo(dic, finalpath, namefile):
+def completo(dic, finalpath, namefile, mensaj):
     print("Creara el cbz con el nombre de la carpeta")
     print(dic['destino'])
     cbz = dic['destino'] + "/" + namefile + ".cbz"
@@ -66,11 +68,11 @@ def completo(dic, finalpath, namefile):
         shutil.rmtree(finalpath)
     except:
         print('Error while deleting directory')
-    mnsj = namefile
-    send(mnsj)
+    
+    mensaj.append(namefile + "\n\n")
 
 
-def ultimo(dic, finalpath, namefile):
+def ultimo(dic, finalpath, namefile, mensaj):
     # print("Creara el cbz con el nombre de la carpeta")
     # print(dic['destino'])
     numbers = re.findall(r"[-+]?\d*\.\d+|\d+", namefile)
@@ -93,10 +95,10 @@ def ultimo(dic, finalpath, namefile):
         shutil.rmtree(finalpath)
     except:
         print('Error while deleting directory')
-    mnsj = dic['name'] + numero
-    send(mnsj)
+    
+    mensaj.append(dic['name'] + numero + "\n\n")
 
-def primero(dic, finalpath, namefile):
+def primero(dic, finalpath, namefile, mensaj):
     # print("Creara el cbz con el nombre de la carpeta")
     # print(dic['destino'])
     numbers = re.findall(r"[-+]?\d*\.\d+|\d+", namefile)
@@ -119,11 +121,12 @@ def primero(dic, finalpath, namefile):
         shutil.rmtree(finalpath)
     except:
         print('Error while deleting directory')
-    mnsj = dic['name'] + numero
-    send(mnsj)
+    
+    mensaj.append(dic['name'] + numero + "\n\n")
 
 
 def main():
+    mensaj = []
     os.system("adb connect 192.168.1.166:5555")
     os.system("adb pull /storage/emulated/0/Tachiyomi /media/cristian/Datos/Comics")
     with open('/home/cristian/Github/TachiyomiMangaOrganizer/mangas.json') as json_file:
@@ -137,39 +140,42 @@ def main():
             if os.path.isdir(path2):
                 files = os.listdir(path2)
                 for file2 in files:
-                    path3 = path2 + "/" + file2
-                    if os.path.isdir(path3):
-                        files2 = os.listdir(path3)
-                        for file3 in files2:
-                            path4 = path3 + "/" + file3
-                            try:
-                                destino = (mangas[path3]['destino'])
-                                if mangas[path3]['funcion'] == "completo":
-                                    completo(mangas[path3], path4, file3)
-                                if mangas[path3]['funcion'] == "ultimo":
-                                    print(destino)
-                                    print(file3)
-                                    ultimo(mangas[path3], path4, file3)
-                                if mangas[path3]['funcion'] == "primero":
-                                    print(destino)
-                                    print(file3)
-                                    primero(mangas[path3], path4, file3)
-                            except Exception as e:
-                                print(e)
-                                error = str(e)[1: 69]
-                                print(mangas[error]['destino'])
-                                if mangas[error]['funcion'] == "completo":
-                                    completo(mangas[error], path4, file3)
-                                if mangas[error]['funcion'] == "ultimo":
-                                    # print(destino)
-                                    print(file3)
-                                    ultimo(mangas[error], path4, file3)
-                                if mangas[error]['funcion'] == "primero":
-                                    # print(destino)
-                                    print(file3)
-                                    primero(mangas[error], path4, file3)
+                   # path3 = path2 + "/" + file2
+                    print(path3)
+                    if path3 != '/media/cristian/Datos/Comics/Tachiyomi/backup/automatic':
+                        if os.path.isdir(path3):
+                            files2 = os.listdir(path3)
+                            for file3 in files2:
+                                path4 = path3 + "/" + file3
+                                try:
+                                    destino = (mangas[path3]['destino'])
+                                    if mangas[path3]['funcion'] == "completo":
+                                        completo(mangas[path3], path4, file3, mensaj)
+                                    if mangas[path3]['funcion'] == "ultimo":
+                                        print(destino)
+                                        print(file3)
+                                        ultimo(mangas[path3], path4, file3, mensaj)
+                                    if mangas[path3]['funcion'] == "primero":
+                                        print(destino)
+                                        print(file3)
+                                        primero(mangas[path3], path4, file3, mensaj)
+                                except Exception as e:
+                                    print(e)
+                                    error = str(e)[1: 69]
+                                    print(mangas[error]['destino'])
+                                    if mangas[error]['funcion'] == "completo":
+                                        completo(mangas[error], path4, file3, mensaj)
+                                    if mangas[error]['funcion'] == "ultimo":
+                                        # print(destino)
+                                        print(file3)
+                                        ultimo(mangas[error], path4, file3, mensaj)
+                                    if mangas[error]['funcion'] == "primero":
+                                        # print(destino)
+                                        print(file3)
+                                        primero(mangas[error], path4, file3, mensaj)
 
     os.system('adb shell "find /storage/emulated/0/Tachiyomi/ -type d -mindepth 3 -exec rm -rf "{}" \;"')
+    send(mensaj)
     # with open("/home/cristian/Github/MangaExporter/mangas2.json", "w") as outfile:
     #     json.dump(mangas2, outfile)
 
