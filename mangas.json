@@ -823,7 +823,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Esa gal de Hokkaido es demasiado linda": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Esa gal de Hokkaido es demasiado linda (2020)",
         "name": "Esa gal de Hokkaido es demasiado linda (2020) Issue #",
-        "funcion": "primero",
+        "funcion": "ultimo",
         "Series" : "Esa gal de Hokkaido es demasiado linda",
         "Volume" : "2020",
         "Publisher" : "Shueisha"

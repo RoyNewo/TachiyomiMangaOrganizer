@@ -1,11 +1,22 @@
-import os
-from zipfile import ZipFile
-from os.path import basename
-import re
 import json
+import os
+import re
 import shutil
 import xml.etree.cElementTree as ET
+from os.path import basename
+from zipfile import ZipFile
 
+import telegram
+
+
+def send(msg):
+    """
+    Send a message to a telegram user or group specified on chatId
+    chat_id must be a number!
+    """
+    mensaje = "Descargado " + msg
+    bot = telegram.Bot(token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
+    bot.sendMessage(chat_id=-275028186, text=mensaje)
 
 def isfloat(x):
     try:
@@ -55,6 +66,8 @@ def completo(dic, finalpath, namefile):
         shutil.rmtree(finalpath)
     except:
         print('Error while deleting directory')
+    mnsj = namefile
+    send(mnsj)
 
 
 def ultimo(dic, finalpath, namefile):
@@ -80,6 +93,8 @@ def ultimo(dic, finalpath, namefile):
         shutil.rmtree(finalpath)
     except:
         print('Error while deleting directory')
+    mnsj = dic['name'] + numero
+    send(mnsj)
 
 def primero(dic, finalpath, namefile):
     # print("Creara el cbz con el nombre de la carpeta")
@@ -104,6 +119,8 @@ def primero(dic, finalpath, namefile):
         shutil.rmtree(finalpath)
     except:
         print('Error while deleting directory')
+    mnsj = dic['name'] + numero
+    send(mnsj)
 
 
 def main():
