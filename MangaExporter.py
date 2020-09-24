@@ -5,6 +5,7 @@ import shutil
 import xml.etree.cElementTree as ET
 from os.path import basename
 from zipfile import ZipFile
+import time
 
 import telegram
 
@@ -17,9 +18,17 @@ def send(msg):
     if msg:
     	mnsj = "Siguientes Comics/Mangas se han descargado:\n\n"
     	for string in msg:
-        	mnsj = mnsj + string
-    	bot = telegram.Bot(token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
+            longitud = len(mnsj) + len(string)
+            if longitud < 4096:
+        	    mnsj = mnsj + string
+            else:
+                time.sleep(2)
+                bot = telegram.Bot(token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
+    	        bot.sendMessage(chat_id=-275028186, text=mnsj)
+                mnsj = string
+        bot = telegram.Bot(token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
     	bot.sendMessage(chat_id=-275028186, text=mnsj)
+    	
 
 def isfloat(x):
     try:
@@ -141,7 +150,7 @@ def main():
             if os.path.isdir(path2):
                 files = os.listdir(path2)
                 for file2 in files:
-                   path3 = path2 + "/" + file2
+                    path3 = path2 + "/" + file2
                     # print(path3)
                     if path3 != '/media/cristian/Datos/Comics/Tachiyomi/backup/automatic':
                         if os.path.isdir(path3):
