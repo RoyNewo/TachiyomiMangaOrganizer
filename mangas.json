@@ -995,5 +995,13 @@
         "Series" : "Sarah's Scribbles",
         "Volume" : "2016",
         "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Akame ga Kil": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Square Enix/Akame ga Kill (2010)",
+        "name": "Akame ga Kill (2010) Issue #",
+        "funcion": "primero",
+        "Series" : "Akame ga Kill",
+        "Volume" : "2010",
+        "Publisher" : "Square Enix"
     }
 }
