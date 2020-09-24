@@ -16,19 +16,22 @@ def send(msg):
     chat_id must be a number!
     """
     if msg:
-    	mnsj = "Siguientes Comics/Mangas se han descargado:\n\n"
-    	for string in msg:
+        msg.sort()
+        mnsj = "Siguientes Comics/Mangas se han descargado:\n\n"
+        for string in msg:
             longitud = len(mnsj) + len(string)
             if longitud < 4096:
-        	    mnsj = mnsj + string
+                mnsj = mnsj + string
             else:
                 time.sleep(2)
-                bot = telegram.Bot(token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
-    	        bot.sendMessage(chat_id=-275028186, text=mnsj)
+                bot = telegram.Bot(
+                    token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
+                bot.sendMessage(chat_id=-275028186, text=mnsj)
                 mnsj = string
-        bot = telegram.Bot(token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
-    	bot.sendMessage(chat_id=-275028186, text=mnsj)
-    	
+        bot = telegram.Bot(
+            token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
+        bot.sendMessage(chat_id=-275028186, text=mnsj)
+
 
 def isfloat(x):
     try:
@@ -78,7 +81,7 @@ def completo(dic, finalpath, namefile, mensaj):
         shutil.rmtree(finalpath)
     except:
         print('Error while deleting directory')
-    
+
     mensaj.append(namefile + "\n\n")
 
 
@@ -105,8 +108,9 @@ def ultimo(dic, finalpath, namefile, mensaj):
         shutil.rmtree(finalpath)
     except:
         print('Error while deleting directory')
-    
+
     mensaj.append(dic['name'] + numero + "\n\n")
+
 
 def primero(dic, finalpath, namefile, mensaj):
     # print("Creara el cbz con el nombre de la carpeta")
@@ -131,7 +135,7 @@ def primero(dic, finalpath, namefile, mensaj):
         shutil.rmtree(finalpath)
     except:
         print('Error while deleting directory')
-    
+
     mensaj.append(dic['name'] + numero + "\n\n")
 
 
@@ -160,31 +164,38 @@ def main():
                                 try:
                                     destino = (mangas[path3]['destino'])
                                     if mangas[path3]['funcion'] == "completo":
-                                        completo(mangas[path3], path4, file3, mensaj)
+                                        completo(mangas[path3],
+                                                 path4, file3, mensaj)
                                     if mangas[path3]['funcion'] == "ultimo":
                                         print(destino)
                                         print(file3)
-                                        ultimo(mangas[path3], path4, file3, mensaj)
+                                        ultimo(mangas[path3],
+                                               path4, file3, mensaj)
                                     if mangas[path3]['funcion'] == "primero":
                                         print(destino)
                                         print(file3)
-                                        primero(mangas[path3], path4, file3, mensaj)
+                                        primero(mangas[path3],
+                                                path4, file3, mensaj)
                                 except Exception as e:
                                     print(e)
                                     error = str(e)[1: 69]
                                     print(mangas[error]['destino'])
                                     if mangas[error]['funcion'] == "completo":
-                                        completo(mangas[error], path4, file3, mensaj)
+                                        completo(mangas[error],
+                                                 path4, file3, mensaj)
                                     if mangas[error]['funcion'] == "ultimo":
                                         # print(destino)
                                         print(file3)
-                                        ultimo(mangas[error], path4, file3, mensaj)
+                                        ultimo(mangas[error],
+                                               path4, file3, mensaj)
                                     if mangas[error]['funcion'] == "primero":
                                         # print(destino)
                                         print(file3)
-                                        primero(mangas[error], path4, file3, mensaj)
+                                        primero(mangas[error],
+                                                path4, file3, mensaj)
 
-    os.system('adb shell "find /storage/emulated/0/Tachiyomi/ -type d -mindepth 3 -exec rm -rf "{}" \;"')
+    os.system(
+        'adb shell "find /storage/emulated/0/Tachiyomi/ -type d -mindepth 3 -exec rm -rf "{}" \;"')
     send(mensaj)
     # with open("/home/cristian/Github/MangaExporter/mangas2.json", "w") as outfile:
     #     json.dump(mangas2, outfile)
