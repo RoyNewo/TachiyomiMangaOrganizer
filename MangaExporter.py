@@ -141,8 +141,8 @@ def main():
             if os.path.isdir(path2):
                 files = os.listdir(path2)
                 for file2 in files:
-                   # path3 = path2 + "/" + file2
-                    print(path3)
+                   path3 = path2 + "/" + file2
+                    # print(path3)
                     if path3 != '/media/cristian/Datos/Comics/Tachiyomi/backup/automatic':
                         if os.path.isdir(path3):
                             files2 = os.listdir(path3)
