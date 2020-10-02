@@ -1003,5 +1003,13 @@
         "Series" : "Akame ga Kill",
         "Volume" : "2010",
         "Publisher" : "Square Enix"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/Manually/Dark One": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Vault Comics/Dark One (2020)",
+        "name": "Dark One (2020) Issue #",
+        "funcion": "primero",
+        "Series" : "Dark One",
+        "Volume" : "2020",
+        "Publisher" : "Vault Comics"
     }
 }
