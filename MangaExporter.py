@@ -25,12 +25,12 @@ def send(msg):
             else:
                 time.sleep(2)
                 bot = telegram.Bot(
-                    token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
-                bot.sendMessage(chat_id=-275028186, text=mnsj)
+                    token="")
+                bot.sendMessage(chat_id="", text=mnsj)
                 mnsj = string
         bot = telegram.Bot(
-            token="675445262:AAF2LV5J6BflPwwLBpYJ3eds_MyX6HsvN2w")
-        bot.sendMessage(chat_id=-275028186, text=mnsj)
+            token="")
+        bot.sendMessage(chat_id="", text=mnsj)
 
 
 def isfloat(x):
