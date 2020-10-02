@@ -10,7 +10,7 @@ import time
 import telegram
 
 
-def send(msg):
+def send(msg, tok, cid):
     """
     Send a message to a telegram user or group specified on chatId
     chat_id must be a number!
@@ -25,12 +25,12 @@ def send(msg):
             else:
                 time.sleep(2)
                 bot = telegram.Bot(
-                    token="")
-                bot.sendMessage(chat_id="", text=mnsj)
+                    token=tok)
+                bot.sendMessage(chat_id=cid, text=mnsj)
                 mnsj = string
         bot = telegram.Bot(
-            token="")
-        bot.sendMessage(chat_id="", text=mnsj)
+            token=tok)
+        bot.sendMessage(chat_id=cid, text=mnsj)
 
 
 def isfloat(x):
@@ -141,10 +141,14 @@ def primero(dic, finalpath, namefile, mensaj):
 
 def main():
     mensaj = []
-    os.system("adb connect 192.168.1.166:5555")
-    os.system("adb pull /storage/emulated/0/Tachiyomi /media/cristian/Datos/Comics")
+    
     with open('/home/cristian/Github/TachiyomiMangaOrganizer/mangas.json') as json_file:
         mangas = json.load(json_file)
+    with open('/home/cristian/Github/TachiyomiMangaOrganizer/secrets.json') as json_file2:
+        secrets = json.load(json_file2)
+    conect = "adb connect " + secrets['ip']
+    os.system(conect)
+    os.system("adb pull /storage/emulated/0/Tachiyomi /media/cristian/Datos/Comics")
     path = "/media/cristian/Datos/Comics/Tachiyomi"
     dirs = os.listdir(path)
     dirs.sort()
@@ -196,7 +200,7 @@ def main():
 
     os.system(
         'adb shell "find /storage/emulated/0/Tachiyomi/ -type d -mindepth 3 -exec rm -rf "{}" \;"')
-    send(mensaj)
+    send(mensaj, secrets['token'], secrets['chatid'])
     # with open("/home/cristian/Github/MangaExporter/mangas2.json", "w") as outfile:
     #     json.dump(mangas2, outfile)
 
