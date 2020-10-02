@@ -655,7 +655,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Dungeon Meshi": {
         "destino": "/media/cristian/Datos/Comics/Reader/Enterbrain/Dungeon Meshi (2017)(ES)",
         "name": "Dungeon Meshi (2017)(ES) Issue #",
-        "funcion": "",
+        "funcion": "ultimo",
         "Series" : "Dungeon Meshi (ES)",
         "Volume" : "2017",
         "Publisher" : "Enterbrain"
