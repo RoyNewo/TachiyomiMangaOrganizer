@@ -79,6 +79,14 @@
         "Volume" : "2014",
         "Publisher" : "Media Factory"
     },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Re_Zero kara Hajimeru Isekai Seikatsu (Novela)": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Media Factory/Re Zero kara Hajimeru Isekai Seikatsu Novela (2012)",
+        "name": "Re Zero kara Hajimeru Isekai Seikatsu (2014) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Re Zero kara Hajimeru Isekai Seikatsu",
+        "Volume" : "2012",
+        "Publisher" : "Media Factory"
+    },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/El ardiente Nirai Kanai": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/El Ardiente Nirai Kanai (2020)",
         "name": "El Ardiente Nirai Kanai (2020) Issue #",
@@ -165,6 +173,14 @@
         "funcion": "ultimo",
         "Series" : "Darwin's Game",
         "Volume" : "2012",
+        "Publisher" : "Akita Shoten"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Wolf Guy_ Ookami no Monshou": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Akita Shoten/Wolf Guy (2007)",
+        "name": "/Wolf Guy (2007) Issue #",
+        "funcion": "ultimo",
+        "Series" : "/Wolf Guy",
+        "Volume" : "2007",
         "Publisher" : "Akita Shoten"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/UNDEAD + UNLUCK": {
@@ -322,6 +338,14 @@
         "funcion": "ultimo",
         "Series" : "Wonder Woman",
         "Volume" : "2016",
+        "Publisher" : "DC Comics"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/ReadComicOnline (EN)/Batman_ Three Jokers": {
+        "destino": "/media/cristian/Datos/Comics/Reader/DC Comics/Batman Three Jokers (2020)",
+        "name": "Batman Three Jokers (2020) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Batman Three Jokers",
+        "Volume" : "2020",
         "Publisher" : "DC Comics"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/JoJos Bizarre Adventure Parte 6-Stone Ocean": {
@@ -698,6 +722,22 @@
         "funcion": "ultimo",
         "Series" : "Goblin Slayer",
         "Volume" : "2016",
+        "Publisher" : "Square Enix"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Kuroshitsuji": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Square Enix/Kuroshitsuji (2006)",
+        "name": "Kuroshitsuji (2006) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Kuroshitsuji",
+        "Volume" : "2006",
+        "Publisher" : "Square Enix"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Horimiya": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Square Enix/Horimiya (2008)",
+        "name": "Horimiya (2008) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Horimiya",
+        "Volume" : "2008",
         "Publisher" : "Square Enix"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/Webtoons.com (EN)/The Gamer": {
