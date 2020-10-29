@@ -26,7 +26,7 @@ def vosque(url):
     for tag in navigationcontent[0]:
         # print(tag)
         tag2 = str(tag.encode('utf-8'))
-        tag2 = tag2.strip("\t\t")
+        # tag2 = tag2.strip("\t\t")
         tag2 = tag2.strip("\n")
         tag2 = tag2.strip("\t")
         serie = tag2
@@ -66,7 +66,7 @@ def vosque2(url):
     for tag in navigationcontent[0]:
         # print(tag)
         tag2 = str(tag.encode('utf-8'))
-        tag2 = tag2.strip("\t\t")
+        # tag2 = tag2.strip("\t\t")
         tag2 = tag2.strip("\n")
         tag2 = tag2.strip("\t")        
         serie = tag2

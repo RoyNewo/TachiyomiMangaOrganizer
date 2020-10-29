@@ -15,6 +15,14 @@
         "Volume" : "2014",
         "Publisher" : "Shogakukan"
     },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/I am a hero": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shogakukan/I am a Hero (2009)/",
+        "name": "I am a Hero (2009) Issue #",
+        "funcion": "ultimo",
+        "Series" : "I am a Hero",
+        "Volume" : "2009",
+        "Publisher" : "Shogakukan"
+    },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/Hunter x Hunter": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Hunter X Hunter (1998)(MP)/",
         "name": "Hunter X Hunter (1998) Issue #",
@@ -85,6 +93,14 @@
         "funcion": "ultimo",
         "Series" : "Re Zero kara Hajimeru Isekai Seikatsu",
         "Volume" : "2012",
+        "Publisher" : "Media Factory"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Re_Zero kara Hajimeru Isekai Seikatsu - Daiyonshou - Seiiki to Gouyoku no Majou": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Media Factory/Re Zero kara Hajimeru Isekai Seikatsu Daiyonshou (2020)",
+        "name": "Re Zero kara Hajimeru Isekai Seikatsu Daiyonshou (2020) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Re Zero kara Hajimeru Isekai Seikatsu Daiyonshou (2020)",
+        "Volume" : "2020",
         "Publisher" : "Media Factory"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/El ardiente Nirai Kanai": {
@@ -177,9 +193,9 @@
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Wolf Guy_ Ookami no Monshou": {
         "destino": "/media/cristian/Datos/Comics/Reader/Akita Shoten/Wolf Guy (2007)",
-        "name": "/Wolf Guy (2007) Issue #",
+        "name": "Wolf Guy (2007) Issue #",
         "funcion": "ultimo",
-        "Series" : "/Wolf Guy",
+        "Series" : "Wolf Guy",
         "Volume" : "2007",
         "Publisher" : "Akita Shoten"
     },
@@ -370,6 +386,22 @@
         "funcion": "primero",
         "Series" : "Dr Stone (MP)",
         "Volume" : "2017",
+        "Publisher" : "Shueisha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/El misterio prohibido de Ron Kamonohashi": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/El misterio prohibido de ron kamonohashi (2020)",
+        "name": "El misterio prohibido de ron kamonohashi (2020) Issue #",
+        "funcion": "primero",
+        "Series" : "El misterio prohibido de ron kamonohashi",
+        "Volume" : "2020",
+        "Publisher" : "Shueisha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/La sombra del Anillo": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/La sombra del anillo (2020)",
+        "name": "La sombra del anillo (2020) Issue #",
+        "funcion": "primero",
+        "Series" : "La sombra del anillo",
+        "Volume" : "2020",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/solo leveling": {
@@ -765,6 +797,14 @@
         "Publisher" : "Kodansha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/Baby Steps": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Baby Steps (2009)(EN)",
+        "name": "Baby Steps (2009)(EN) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Baby Steps (EN)",
+        "Volume" : "2009",
+        "Publisher" : "Kodansha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/Mangakakalot (EN)/Baby Steps": {
         "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Baby Steps (2009)(EN)",
         "name": "Baby Steps (2009)(EN) Issue #",
         "funcion": "ultimo",

@@ -70,12 +70,12 @@ def ultimo(dic, finalpath, namefile, comprimido, ruta):
 
 def main():
     path = "/media/cristian/Datos/Comics/Buffer/Originales"
-    manga = { "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/One Piece (1997)(NM)",
-        "name": "One Piece (1997)(NM) Issue #",
-        "funcion": "primero",
-        "Series" : "One Piece (NM)",
-        "Volume" : "1997",
-        "Publisher" : "Shueisha"}
+    manga = { "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Baby Steps (2009)(EN)",
+        "name": "Baby Steps (2009)(EN) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Baby Steps (EN)",
+        "Volume" : "2009",
+        "Publisher" : "Kodansha"}
     files = os.listdir(path)
     for ficheros in files:
         filename, file_extension = os.path.splitext(ficheros)
