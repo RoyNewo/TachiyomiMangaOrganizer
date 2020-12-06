@@ -63,22 +63,6 @@
         "Volume" : "2015",
         "Publisher" : "Shueisha"
     },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Black Clover\u00b7": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Black Clover (2015)(NM)",
-        "name": "Black Clover (2015)(NM) Issue #",
-        "funcion": "ultimo",
-        "Series" : "Black Clover (NM)",
-        "Volume" : "2015",
-        "Publisher" : "Shueisha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Black Clover": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Black Clover (2015)(NM)",
-        "name": "Black Clover (2015)(NM) Issue #",
-        "funcion": "ultimo",
-        "Series" : "Black Clover (NM)",
-        "Volume" : "2015",
-        "Publisher" : "Shueisha"
-    },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Mushoku Tensei ~Isekai Ittara Honki Dasu~": {
         "destino": "/media/cristian/Datos/Comics/Reader/Media Factory/Mushoku Tensei (2014)",
         "name": "Mushoku Tensei (2014) Issue #",
@@ -266,7 +250,10 @@
     "/media/cristian/Datos/Comics/Tachiyomi/Cyanide & Happiness (EN)/C&H 2020": {
         "destino": "/media/cristian/Datos/Comics/Reader/Cyanide & Happiness/C&H 2020",
         "name": "C&H 2020 Issue #",
-        "funcion": "completo"
+        "funcion": "completo",
+        "Series" : "C&H 2020",
+        "Volume" : "2020",
+        "Publisher" : "Cyanide & Happiness"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Baby Steps": {
         "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Baby Steps (2009)(ES)",
@@ -596,22 +583,6 @@
         "Volume" : "2015",
         "Publisher" : "Shueisha"
     },
-    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Suito-to!": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Suito-to! (2020)",
-        "name": "Suito-to! (2020) Issue #",
-        "funcion": "primero",
-        "Series" : "Suito-to!",
-        "Volume" : "2020",
-        "Publisher" : "Shueisha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/S": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Suito-to! (2020)",
-        "name": "Suito-to! (2020) Issue #",
-        "funcion": "primero",
-        "Series" : "Suito-to!",
-        "Volume" : "2020",
-        "Publisher" : "Shueisha"
-    },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Silver Spoon": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shogakukan/Silver Spoon (2011)",
         "name": "Silver Spoon (2011) Issue #",
@@ -673,6 +644,22 @@
         "name": "Phantom Seer (2020) Issue #",
         "funcion": "primero",
         "Series" : "Phantom Seer",
+        "Volume" : "2020",
+        "Publisher" : "Shueisha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/Build King": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Build King (2020)",
+        "name": "Build King (2020) Issue #",
+        "funcion": "primero",
+        "Series" : "Build King",
+        "Volume" : "2020",
+        "Publisher" : "Shueisha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/SAKAMOTO DAYS": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Sakamoto Days (2020)",
+        "name": "Sakamoto Days (2020) Issue #",
+        "funcion": "primero",
+        "Series" : "Sakamoto Days",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
     },
@@ -1076,7 +1063,7 @@
         "Volume" : "2016",
         "Publisher" : "Webtoon"
     },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Akame ga Kil": {
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Akame ga Kill!": {
         "destino": "/media/cristian/Datos/Comics/Reader/Square Enix/Akame ga Kill (2010)",
         "name": "Akame ga Kill (2010) Issue #",
         "funcion": "primero",

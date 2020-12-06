@@ -1,12 +1,12 @@
 import patoolib
 import os
 from os.path import basename
-import re
 import json
 import shutil
-import xml.etree.cElementTree as ET
 import glob
 from zipfile import ZipFile
+import xmltodict
+import pprint
 
 def cbzgenerator(namefile):
     parents, filename = os.path.split(namefile)
@@ -17,12 +17,27 @@ def cbzgenerator(namefile):
         print ("Creation of the directory %s failed" % temporal)
 
     patoolib.extract_archive(namefile, outdir=temporal)
-    os.rename(namefile, namefile + ".extraido")
+    # os.rename(namefile, namefile + ".extraido")
+    comicinfo = temporal + '/ComicInfo.xml'
+    with open(comicinfo,"r") as xml_obj:
+        #coverting the xml data to Python dictionary
+        my_dict = xmltodict.parse(xml_obj.read())
+        #closing the file
+    xml_obj.close()
+
+    # print(json.dumps(my_dict))
+    print(my_dict['ComicInfo']['Series'])
+    destino = '/media/cristian/Datos/Comics/Reader/' + my_dict['ComicInfo']['Publisher'] + '/' + my_dict['ComicInfo']['Series'] + ' (' + my_dict['ComicInfo']['Volume'] + ')'
+    destino = destino.replace(':', '')
+    print(destino)
+    if not os.path.exists(destino):
+        os.makedirs(destino)
     archivos = glob.glob(temporal + '/**/*.*', recursive=True)
     archivos.sort()
 
-    filename2, file_extension = os.path.splitext(filename)
-    cbz = parents + '/' + filename2 + '.cbz.new'
+    # filename2, file_extension = os.path.splitext(filename)
+    cbz = destino + '/' + my_dict['ComicInfo']['Series'] + ' (' + my_dict['ComicInfo']['Volume'] + ') Issue #' + '{:0>4}'.format(my_dict['ComicInfo']['Number']) + '.cbz'
+    cbz = cbz.replace(':', '')
     zipobje = ZipFile(cbz, 'w')
     for archivos2 in archivos:
         ruta, nombrearchivo = os.path.split(archivos2)
@@ -37,14 +52,14 @@ def main():
     path = "/media/cristian/Datos/Comics/Marvel/War of the Realms (Story Arc) (2019)"
     # path = "/media/cristian/Datos/Comics/Buffer/cbr"
 
-    files = glob.glob(path + '/**/*.[cC][bB][rR]', recursive=True)
+    # files = glob.glob(path + '/**/*.[cC][bB][rR]', recursive=True)
     files2 = glob.glob(path + '/**/*.[cC][bB][zZ]', recursive=True)
     # print(files)
     # print(files2)
     # for ficheros in files:
     #     parents, filename = os.path.split(ficheros)
-    for ficheros in files:
-        cbzgenerator(ficheros)
+    # for ficheros in files:
+    #     cbzgenerator(ficheros)
     for ficheros2 in files2:
         cbzgenerator(ficheros2)
 
