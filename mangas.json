@@ -287,6 +287,14 @@
         "Volume" : "1998",
         "Publisher" : "Shueisha"
     },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Gantz": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Gantz (2000)",
+        "name": "Gantz (2000) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Gantz",
+        "Volume" : "2000",
+        "Publisher" : "Shueisha"
+    },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Dr.Stone": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Dr Stone (2017)(NM)",
         "name": "Dr Stone (2017)(NM) Issue #",
@@ -429,6 +437,22 @@
         "funcion": "ultimo",
         "Series" : "Nozoki Ana",
         "Volume" : "2009",
+        "Publisher" : "Shogakukan"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Alice in Borderland": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shogakukan/Alice in Borderland (2010)",
+        "name": "Alice in Borderland (2010) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Alice in Borderland",
+        "Volume" : "2010",
+        "Publisher" : "Shogakukan"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Alice in Borderland Retry": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shogakukan/Alice in Borderland Retry (2020)",
+        "name": "Alice in Borderland Retry (2020) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Alice in Borderland Retry",
+        "Volume" : "2020",
         "Publisher" : "Shogakukan"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/Webtoons.com (EN)/Tower of God": {
@@ -660,6 +684,22 @@
         "name": "Sakamoto Days (2020) Issue #",
         "funcion": "primero",
         "Series" : "Sakamoto Days",
+        "Volume" : "2020",
+        "Publisher" : "Shueisha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/SAKAMOTO DAYS": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Sakamoto Days (2020)",
+        "name": "Sakamoto Days (2020) Issue #",
+        "funcion": "primero",
+        "Series" : "Sakamoto Days",
+        "Volume" : "2020",
+        "Publisher" : "Shueisha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Aragane no ko. Diamante en bruto": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Aragane no ko (2020)",
+        "name": "Aragane no ko (2020) Issue #",
+        "funcion": "primero",
+        "Series" : "Aragane no ko",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
     },

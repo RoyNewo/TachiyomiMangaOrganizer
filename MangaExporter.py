@@ -7,7 +7,7 @@ import xml.etree.cElementTree as ET
 from os.path import basename
 from zipfile import ZipFile
 import time
-from subprocess import Popen, PIPE
+from subprocess import Popen, PIPE, call
 import telegram
 
 
@@ -50,24 +50,31 @@ def send(msg, msg2, tok, cid):
         bot.sendMessage(chat_id=cid, text=mnsj)
 
 def conexion(secret):
-    arp = Popen(['/usr/sbin/arp', '-n'], stdout=PIPE)
-    grep = Popen(['/bin/grep', '-i', 'b8:27:eb:95:9f:bd'], stdin=arp.stdout, stdout=PIPE)
-    arp.stdout.close()
-    cut = Popen(['/usr/bin/cut', '-d', ' ', '-f1'], stdin=grep.stdout, stdout=PIPE)
-    grep.stdout.close()
+    output = ''
+    count = 0
+    while output == '' and count < 10:
+        arp = Popen(['/usr/sbin/arp', '-n'], stdout=PIPE)
+        grep = Popen(['/bin/grep', '-i', 'b8:27:eb:95:9f:bd'], stdin=arp.stdout, stdout=PIPE)
+        arp.stdout.close()
+        cut = Popen(['/usr/bin/cut', '-d', ' ', '-f1'], stdin=grep.stdout, stdout=PIPE)
+        grep.stdout.close()
 
-    output = cut.communicate()[0].decode('utf-8').strip()
-    print (output, secret['ip'])
-    if output != secret['ip']:
-        secret['ip'] = output
-        with open('/home/cristian/Github/TachiyomiMangaOrganizer/secrets.json', 'w') as outfile:  
-            json.dump(secret, outfile) 
-        conect = "adb connect " + output + ":" + secret['puerto']        
-    else:
-        conect = "adb connect " + secret['ip'] + ":" + secret['puerto']
+        output = cut.communicate()[0].decode('utf-8').strip()
+        print (output, secret['ip'])
+        # secret['ip'] = output
+        if output != secret['ip']:
+            secret['ip'] = output
+            with open('/home/cristian/Github/TachiyomiMangaOrganizer/secrets.json', 'w') as outfile:  
+                json.dump(secret, outfile) 
+        elif output == '':
+            for ping in range(1,255): 
+                address = "192.168.1." + str(ping)
+                call(['ping', '-c', '3', address])
+        count += 1
+        
+    conect = "adb connect " + output + ":5555"
 
     return conect
-
 
 
 def isfloat(x):
@@ -229,6 +236,7 @@ def main():
         secrets = json.load(json_file2)
     # conect = "adb connect " + secrets['ip']
     os.system(conexion(secrets))
+    time.sleep(5)
     os.system("adb pull /storage/emulated/0/Tachiyomi /media/cristian/Datos/Comics")
     path = "/media/cristian/Datos/Comics/Tachiyomi"
     dirs = os.listdir(path)
