@@ -1,60 +1,32 @@
 {
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Torre de Dios": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Tower of God (2010)/",
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Tower of God (2010)(ES)/",
         "name": "Tower of God (2010) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "tower-of-god",
-        "Series" : "Tower of God",
-        "Volume" : "2010",
-        "Publisher" : "Webtoon"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/Webtoons.com (EN)/Tower of God": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Tower of God (2010)",
-        "name": "Tower of God (2010) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "Webtoons.com (EN)",
-        "slug":  "tower-of-god",
-        "Series" : "Tower of God",
+        "funcion": "ultimo",
+        "Series" : "Tower of God (ES)",
         "Volume" : "2010",
         "Publisher" : "Webtoon"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Helck": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shogakukan/Helck (2014)/",
         "name": "Helck (2014) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "helck",
+        "funcion": "ultimo",
         "Series" : "Helck",
         "Volume" : "2014",
         "Publisher" : "Shogakukan"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/Hunter x Hunter": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Hunter X Hunter (1998)/",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Hunter X Hunter (1998)(MP)/",
         "name": "Hunter X Hunter (1998) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (EN)",
-        "slug":  "hunter-x-hunter",
-        "Series" : "Hunter X Hunter",
-        "Volume" : "1998",
-        "Publisher" : "Shueisha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Hunter x Hunter": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Hunter X Hunter (1998)",
-        "name": "Hunter X Hunter (1998) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "hunter-x-hunter",
-        "Series" : "Hunter X Hunter",
+        "funcion": "primero",
+        "Series" : "Hunter X Hunter (MP)",
         "Volume" : "1998",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Tales of demons and gods": {
         "destino": "/media/cristian/Datos/Comics/Reader/Manhua/Tales of Demons and Gods (2015)",
         "name": "Tales of Demons and Gods (2015) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "yaoshenji",
+        "funcion": "ultimo",
         "Series" : "Tales of Demons and Gods",
         "Volume" : "2015",
         "Publisher" : "Manhua"
@@ -62,9 +34,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Re_Monster": {
         "destino": "/media/cristian/Datos/Comics/Reader/Alpha Polis/Re Monster (2015)",
         "name": "Re Monster (2015) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "re-monster-m",
+        "funcion": "ultimo",
         "Series" : "Re Monster",
         "Volume" : "2015",
         "Publisher" : "Alpha Polis"
@@ -72,39 +42,23 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Kaguya Wants to be Confessed To_ The Geniuses War of Love and Brains": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Kaguya-sama wa Kokurasetai (2015)",
         "name": "Kaguya-sama wa Kokurasetai (2015) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen",
+        "funcion": "ultimo",
         "Series" : "Kaguya-sama wa Kokurasetai",
         "Volume" : "2015",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Platinum End": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Platinum End (2015)",
-        "name": "Platinum End (2015) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "platinum-end",
-        "Series" : "Platinum End",
-        "Volume" : "2015",
-        "Publisher" : "Shueisha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Platinum End": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Platinum End (2015)",
-        "name": "Platinum End (2015) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "platinum-end",
-        "Series" : "Platinum End",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Platinum End (2015)(MP)",
+        "name": "Platinum End (2015)(MP) Issue #",
+        "funcion": "primero",
+        "Series" : "Platinum End (MP)",
         "Volume" : "2015",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Mushoku Tensei ~Isekai Ittara Honki Dasu~": {
         "destino": "/media/cristian/Datos/Comics/Reader/Media Factory/Mushoku Tensei (2014)",
         "name": "Mushoku Tensei (2014) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "mushoku-tensei-isekai-ittara-honki-dasu",
+        "funcion": "ultimo",
         "Series" : "Mushoku Tensei",
         "Volume" : "2014",
         "Publisher" : "Media Factory"
@@ -112,9 +66,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Re_Zero kara Hajimeru Isekai Seikatsu (Novela)": {
         "destino": "/media/cristian/Datos/Comics/Reader/Media Factory/Re Zero kara Hajimeru Isekai Seikatsu Novela (2012)",
         "name": "Re Zero kara Hajimeru Isekai Seikatsu (2014) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "re-zero-kara-hajimeru-isekai-seikatsu",
+        "funcion": "ultimo",
         "Series" : "Re Zero kara Hajimeru Isekai Seikatsu",
         "Volume" : "2012",
         "Publisher" : "Media Factory"
@@ -122,9 +74,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Re_Zero kara Hajimeru Isekai Seikatsu - Daiyonshou - Seiiki to Gouyoku no Majou": {
         "destino": "/media/cristian/Datos/Comics/Reader/Media Factory/Re Zero kara Hajimeru Isekai Seikatsu Daiyonshou (2020)",
         "name": "Re Zero kara Hajimeru Isekai Seikatsu Daiyonshou (2020) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "re-zero-kara-hajimeru-isekai-seikatsu-daisanshou-truth-of-zero",
+        "funcion": "ultimo",
         "Series" : "Re Zero kara Hajimeru Isekai Seikatsu Daiyonshou (2020)",
         "Volume" : "2020",
         "Publisher" : "Media Factory"
@@ -132,39 +82,23 @@
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/El ardiente Nirai Kanai": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/El Ardiente Nirai Kanai (2020)",
         "name": "El Ardiente Nirai Kanai (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "shakunetsu-no-niraikanai",
+        "funcion": "primero",
         "Series" : "El Ardiente Nirai Kanai",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Ao no Exorcist": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Blue Exorcist (2009)",
-        "name": "Blue Exorcist (2009) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "ao-no-exorcist",
-        "Series" : "Blue Exorcist",
-        "Volume" : "2009",
-        "Publisher" : "Shueisha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/Blue Exorcist": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Blue Exorcist (2009)",
-        "name": "Blue Exorcist (2009) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (EN)",
-        "slug":  "ao-no-exorcist",
-        "Series" : "Blue Exorcist",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Blue Exorcist (2009)(NM)",
+        "name": "Blue Exorcist (2009)(NM) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Blue Exorcist (NM)",
         "Volume" : "2009",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Tate no Yuusha no Nariagari": {
         "destino": "/media/cristian/Datos/Comics/Reader/Media Factory/Tate no Yuusha no Nariagari (2014)",
         "name": "Tate no Yuusha no Nariagari (2014) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "tate-no-yuusha-no-nariagari",
+        "funcion": "ultimo",
         "Series" : "Tate no Yuusha no Nariagari",
         "Volume" : "2014",
         "Publisher" : "Media Factory"
@@ -172,39 +106,23 @@
     "/media/cristian/Datos/Comics/Tachiyomi/Webtoons.com (EN)/The Weekly Roll": {
         "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/The Weekly Roll",
         "name": "The Weekly Roll Issue #",
-        "funcion": "Webtoons.com (EN)",
-        "provider" : "Webtoons.com (EN)",
-        "slug":  "undefined",
+        "funcion": "ultimo",
         "Series" : "The Weekly Roll",
         "Volume" : "",
         "Publisher" : "Webtoon"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/My Hero Academia Vigilante Illegals": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Vigilante My hero Academia Illegals (2016)",
-        "name": "Vigilante My hero Academia Illegals (2016) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "vigilante-boku-no-hero-academia-illegals",
-        "Series" : "Vigilante My hero Academia Illegals",
-        "Volume" : "2016",
-        "Publisher" : "Shueisha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Vigilante_ Boku no Hero Academia Illegals": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Vigilante My hero Academia Illegals (2016)",
-        "name": "Vigilante My hero Academia Illegals (2016) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "vigilante-boku-no-hero-academia-illegals",
-        "Series" : "Vigilante My hero Academia Illegals",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Vigilante My hero Academia Illegals (2016)(MP)",
+        "name": "Vigilante My hero Academia Illegals (2016)(MP) Issue #",
+        "funcion": "primero",
+        "Series" : "Vigilante My hero Academia Illegals (MP)",
         "Volume" : "2016",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/8Kaijuu": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Kaiju No 8 (2020)",
         "name": "Kaiju No 8 (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "kaijuu-8-gou",
+        "funcion": "primero",
         "Series" : "Kaiju No 8",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
@@ -212,9 +130,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/Webtoons.com (EN)/Hey Buddy Comics": {
         "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Hey Buddy Comics",
         "name": "Hey Buddy Comics Issue #",
-        "funcion": "Webtoons.com (EN)",
-        "provider" : "Webtoons.com (EN)",
-        "slug":  "undefined",
+        "funcion": "ultimo",
         "Series" : "Hey Buddy Comics",
         "Volume" : "",
         "Publisher" : "Webtoon"
@@ -222,9 +138,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Drifters": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shonen Gahosha/Drifters (2010)",
         "name": "Drifters (2010) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "drifters",
+        "funcion": "ultimo",
         "Series" : "Drifters",
         "Volume" : "2010",
         "Publisher" : "Shonen Gahosha"
@@ -232,9 +146,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/DARWIN'S GAME": {
         "destino": "/media/cristian/Datos/Comics/Reader/Akita Shoten/Darwin's Game (2012)",
         "name": "Darwin's Game (2012) Issue #",
-        "funcion": "NineMangaEn (EN)",
-        "provider" : "NineMangaEn (EN)",
-        "slug":  "darwin-s-game",
+        "funcion": "ultimo",
         "Series" : "Darwin's Game",
         "Volume" : "2012",
         "Publisher" : "Akita Shoten"
@@ -242,9 +154,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/UNDEAD + UNLUCK": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Undead plus Unluck (2020)",
         "name": "Undead plus Unluck (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "undead-unluck",
+        "funcion": "primero",
         "Series" : "Undead plus Unluck",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
@@ -252,39 +162,23 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/D Gray-man": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/D.Gray-man (2004)",
         "name": "D.Gray-man (2004) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "d-gray-man",
+        "funcion": "ultimo",
         "Series" : "D.Gray-man",
         "Volume" : "2004",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/MASHLE": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Mashle (2020)",
-        "name": "Mashle (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "mashle",
-        "Series" : "Mashle",
-        "Volume" : "2020",
-        "Publisher" : "Shueisha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Mashle_ Magic and Muscles": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Mashle (2020)",
-        "name": "Mashle (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "mashle",
-        "Series" : "Mashle",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Mashle (2020)(MP)",
+        "name": "Mashle (2020)(MP) Issue #",
+        "funcion": "primero",
+        "Series" : "Mashle (MP)",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/Magu-chan_ God of Destruction": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Magu-chan God of Destruction (2020)",
         "name": "Magu-chan God of Destruction (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (EN)",
-        "provider" : "MANGA Plus by SHUEISHA (EN)",
-        "slug":  "hakaishin-magu-chan",
+        "funcion": "primero",
         "Series" : "Magu-chan God of Destruction",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
@@ -292,159 +186,103 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/KOMI-SAN WA KOMYUSHOU DESU": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shogakukan/Komi-san wa Komyshou Desu (2016)",
         "name": "Komi-san wa Komyshou Desu (2016) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "komi-san-wa-community-shou-desu-manga",
+        "funcion": "primero",
         "Series" : "Komi-san wa Komyshou Desu",
         "Volume" : "2016",
         "Publisher" : "Shogakukan"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Jujutsu kaisen": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Jujutsu Kaisen (2018)",
-        "name": "Jujutsu Kaisen (2018) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "jujutsu-kaisen",
-        "Series" : "Jujutsu Kaisen",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Jujutsu Kaisen (2018)(NM)",
+        "name": "Jujutsu Kaisen (2018)(NM) Issue #",
+        "funcion": "primero",
+        "Series" : "Jujutsu Kaisen (NM)",
         "Volume" : "2018",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Jujutsu Kaisen": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Jujutsu Kaisen (2018)",
-        "name": "Jujutsu Kaisen (2018) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "jujutsu-kaisen",
-        "Series" : "Jujutsu Kaisen",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Jujutsu Kaisen (2018)(MP)",
+        "name": "Jujutsu Kaisen (2018)(MP) Issue #",
+        "funcion": "primero",
+        "Series" : "Jujutsu Kaisen (MP)",
         "Volume" : "2018",
+        "Publisher" : "Shueisha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Hunter x Hunter": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Hunter X Hunter (1998)(NM)",
+        "name": "Hunter X Hunter (1998)(NM) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Hunter X Hunter (NM)",
+        "Volume" : "1998",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/Cyanide & Happiness (EN)/C&H 2021": {
         "destino": "/media/cristian/Datos/Comics/Reader/Cyanide & Happiness/C&H 2021",
         "name": "C&H 2021 Issue #",
-        "funcion": "Cyanide & Happiness (EN)",
-        "provider" : "Cyanide & Happiness (EN)",
-        "slug":  "undefined",
+        "funcion": "completo",
         "Series" : "C&H 2021",
         "Volume" : "2021",
         "Publisher" : "Cyanide & Happiness"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Baby Steps": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Baby Steps (2009)",
-        "name": "Baby Steps (2009) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "baby-steps",
-        "Series" : "Baby Steps",
-        "Volume" : "2009",
-        "Publisher" : "Kodansha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/Baby Steps": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Baby Steps (2009)",
-        "name": "Baby Steps (2009) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEn (EN)",
-        "slug":  "baby-steps",
-        "Series" : "Baby Steps",
-        "Volume" : "2009",
-        "Publisher" : "Kodansha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/Mangakakalot (EN)/Baby Steps": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Baby Steps (2009)",
-        "name": "Baby Steps (2009) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "Mangakakalot (EN)",
-        "slug":  "baby-steps",
-        "Series" : "Baby Steps",
+        "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Baby Steps (2009)(ES)",
+        "name": "Baby Steps (2009)(ES) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Baby Steps (ES)",
         "Volume" : "2009",
         "Publisher" : "Kodansha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Black Clover": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Black Clover (2015)",
-        "name": "Black Clover (2015) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "black-clover",
-        "Series" : "Black Clover",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Black Clover (2015)(MP)",
+        "name": "Black Clover (2015)(MP) Issue #",
+        "funcion": "primero",
+        "Series" : "Black Clover (MP)",
         "Volume" : "2015",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Gokushufudou": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shinchosha/Gokushufudou (2018)",
-        "name": "Gokushufudou (2018) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "gokushufudou",
-        "Series" : "Gokushufudou",
-        "Volume" : "2018",
-        "Publisher" : "Shinchosha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/Gokushufudou_ The Way of the House Husband": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shinchosha/Gokushufudou (2018)",
-        "name": "Gokushufudou (2018) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEn (EN)",
-        "slug":  "gokushufudou",
-        "Series" : "Gokushufudou",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shinchosha/Gokushufudou (2018)(ES)",
+        "name": "Gokushufudou (2018)(ES) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Gokushufudou (ES)",
         "Volume" : "2018",
         "Publisher" : "Shinchosha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Dr.Stone": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Dr Stone (2017)",
-        "name": "Dr Stone (2017) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "dr-stone",
-        "Series" : "Dr Stone",
-        "Volume" : "2017",
-        "Publisher" : "Shueisha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Dr.Stone": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Dr Stone (2017)",
-        "name": "Dr Stone (2017) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "dr-stone",
-        "Series" : "Dr Stone",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Dr Stone (2017)(NM)",
+        "name": "Dr Stone (2017)(NM) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Dr Stone (NM)",
         "Volume" : "2017",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/ONE PIECE": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/One Piece (1997)",
-        "name": "One Piece (1997) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "one-piece",
-        "Series" : "One Piece",
-        "Volume" : "1997",
-        "Publisher" : "Shueisha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/One Piece": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/One Piece (1997)",
-        "name": "One Piece (1997) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "one-piece",
-        "Series" : "One Piece",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/One Piece (1997)(MP)",
+        "name": "One Piece (1997)(MP) Issue #",
+        "funcion": "primero",
+        "Series" : "One Piece (MP)",
         "Volume" : "1997",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/GHOST REAPER GIRL": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Ghost Reaper Girl (2020)",
         "name": "Ghost Reaper Girl (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (EN)",
-        "provider" : "MANGA Plus by SHUEISHA (EN)",
-        "slug":  "ghost-girl",
+        "funcion": "primero",
         "Series" : "Ghost Reaper Girl",
         "Volume" : "2020",
+        "Publisher" : "Shueisha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/Blue Exorcist": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Blue Exorcist (2009)(MP)",
+        "name": "Blue Exorcist (2009)(MP) Issue #",
+        "funcion": "primero",
+        "Series" : "Blue Exorcist (MP)",
+        "Volume" : "2009",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Made in Abyss": {
         "destino": "/media/cristian/Datos/Comics/Reader/Takeshobo/Made in Abyss (2012)",
         "name": "Made in Abyss (2012) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "made-in-abyss",
+        "funcion": "ultimo",
         "Series" : "Made in Abyss",
         "Volume" : "2012",
         "Publisher" : "Takeshobo"
@@ -452,19 +290,31 @@
     "/media/cristian/Datos/Comics/Tachiyomi/ReadComicOnline (EN)/Wonder Woman (2016)": {
         "destino": "/media/cristian/Datos/Comics/Reader/DC Comics/Wonder Woman (2016)",
         "name": "Wonder Woman (2016) Issue #",
-        "funcion": "ReadComicOnline (EN)",
-        "provider" : "ReadComicOnline (EN)",
-        "slug":  "4050-91774",
+        "funcion": "ultimo",
         "Series" : "Wonder Woman",
         "Volume" : "2016",
         "Publisher" : "DC Comics"
     },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/One Piece": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/One Piece (1997)(NM)",
+        "name": "One Piece (1997)(NM) Issue #",
+        "funcion": "primero",
+        "Series" : "One Piece (NM)",
+        "Volume" : "1997",
+        "Publisher" : "Shueisha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Dr.Stone": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Dr Stone (2017)(MP)",
+        "name": "Dr Stone (2017)(MP) Issue #",
+        "funcion": "primero",
+        "Series" : "Dr Stone (MP)",
+        "Volume" : "2017",
+        "Publisher" : "Shueisha"
+    },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/El misterio prohibido de Ron Kamonohashi": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/El misterio prohibido de ron kamonohashi (2020)",
         "name": "El misterio prohibido de ron kamonohashi (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "kamonohashi-ron-no-kindan-suiri",
+        "funcion": "primero",
         "Series" : "El misterio prohibido de ron kamonohashi",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
@@ -472,9 +322,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/La sombra del Anillo": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/La sombra del anillo (2020)",
         "name": "La sombra del anillo (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "undefined",
+        "funcion": "primero",
         "Series" : "La sombra del anillo",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
@@ -482,39 +330,31 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/solo leveling": {
         "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Solo Leveling (2018)",
         "name": "Solo Leveling (2018) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "solo-levelling",
+        "funcion": "ultimo",
         "Series" : "Solo Leveling",
         "Volume" : "2018",
         "Publisher" : "Webtoon"
     },
-    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/My Hero Academia": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/My Hero Academia (2014)",
-        "name": "My Hero Academia (2014) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "boku-no-hero-academia",
-        "Series" : "My Hero Academia",
-        "Volume" : "2014",
-        "Publisher" : "Shueisha"
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/Gokushufudou_ The Way of the House Husband": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shinchosha/Gokushufudou (2018)(EN)",
+        "name": "Gokushufudou (2018)(EN) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Gokushufudou (EN)",
+        "Volume" : "2018",
+        "Publisher" : "Shinchosha"
     },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Boku no Hero Academia": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/My Hero Academia (2014)",
-        "name": "My Hero Academia (2014) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "boku-no-hero-academia",
-        "Series" : "My Hero Academia",
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/My Hero Academia": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/My Hero Academia (2014)(MP)",
+        "name": "My Hero Academia (2014)(MP) Issue #",
+        "funcion": "primero",
+        "Series" : "My Hero Academia (MP)",
         "Volume" : "2014",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Nozoki Ana": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shogakukan/Nozoki Ana (2009)",
         "name": "Nozoki Ana (2009) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "nozoki-ana",
+        "funcion": "ultimo",
         "Series" : "Nozoki Ana",
         "Volume" : "2009",
         "Publisher" : "Shogakukan"
@@ -522,89 +362,71 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Alice in Borderland Retry": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shogakukan/Alice in Borderland Retry (2020)",
         "name": "Alice in Borderland Retry (2020) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "imawa-no-kuni-no-alice-retry",
+        "funcion": "ultimo",
         "Series" : "Alice in Borderland Retry",
         "Volume" : "2020",
         "Publisher" : "Shogakukan"
     },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/The Gamer": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/The Gamer (2013)",
-        "name": "The Gamer (2013) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "the-gamer",
-        "Series" : "The Gamer",
-        "Volume" : "2013",
+    "/media/cristian/Datos/Comics/Tachiyomi/Webtoons.com (EN)/Tower of God": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Tower of God (2010)(EN)",
+        "name": "Tower of God (2010)(EN) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Tower of God (EN)",
+        "Volume" : "2010",
         "Publisher" : "Webtoon"
     },
-    "/media/cristian/Datos/Comics/Tachiyomi/Webtoons.com (EN)/The Gamer": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/The Gamer (2013)",
-        "name": "The Gamer (2013) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "Webtoons.com (EN)",
-        "slug":  "the-gamer",
-        "Series" : "The Gamer",
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/The Gamer": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/The Gamer (2013)(ES)",
+        "name": "The Gamer (2013)(ES) Issue #",
+        "funcion": "ultimo",
+        "Series" : "The Gamer (ES)",
         "Volume" : "2013",
         "Publisher" : "Webtoon"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Cardcaptor Sakura_ clear card-hen": {
         "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Cardcaptor Sakura Clear Card-Hen (2016)",
         "name": "Cardcaptor Sakura Clear Card-Hen (2016) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "cardcaptor-sakura-clear-card-hen",
+        "funcion": "ultimo",
         "Series" : "Cardcaptor Sakura Clear Card-Hen",
         "Volume" : "2016",
         "Publisher" : "Kodansha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/SPY X FAMILY": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Spy X Family(2019)",
-        "name": "Spy X Family (2019) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "spy-x-family",
-        "Series" : "Spy X Family",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Spy X Family(2019)(NM)",
+        "name": "Spy X Family(2019)(NM) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Spy X Family (NM)",
         "Volume" : "2019",
         "Publisher" : "Shueisha"
     },    
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/SPY x FAMILY": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Spy X Family(2019)",
-        "name": "Spy X Family (2019) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "spy-x-family",
-        "Series" : "Spy X Family",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Spy X Family(2019)(MP)",
+        "name": "Spy X Family(2019)(MP) Issue #",
+        "funcion": "primero",
+        "Series" : "Spy X Family (MP)",
         "Volume" : "2019",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Boruto": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Boruto Naruto Next Generation (2016)",
-        "name": "Boruto(2016) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "boruto",
-        "Series" : "Boruto",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Boruto Naruto Next Generation (2016)(NM)",
+        "name": "Boruto(2016)(NM) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Boruto (NM)",
         "Volume" : "2016",
         "Publisher" : "Shueisha"
     },
-    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Boruto_ Naruto Next Generations": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Boruto Naruto Next Generation (2016)",
-        "name": "Boruto(2016) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "boruto",
-        "Series" : "Boruto",
-        "Volume" : "2016",
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Mashle_ Magic and Muscles": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Mashle (2020)(NM)",
+        "name": "Mashle (2020)(NM) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Mashle (NM)",
+        "Volume" : "2020",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Shingeki no Kyojin": {
         "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Shingeki no Kyojin (2009)",
         "name": "Shingeki no Kyojin (2009) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "shingeki-no-kyojin",
+        "funcion": "primero",
         "Series" : "Shingeki no Kyojin",
         "Volume" : "2009",
         "Publisher" : "Kodansha"
@@ -612,29 +434,23 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Gosu": {
         "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Gosu (2017)",
         "name": "Gosu (2017) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "gosu",
+        "funcion": "ultimo",
         "Series" : "Gosu",
         "Volume" : "2017",
         "Publisher" : "Webtoon"
     },
-    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Héroe fugitivo": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Heroe fugitivo (2021)",
-        "name": "Heroe fugitivo (2021) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "undefined",
-        "Series" : "Heroe fugitivo",
-        "Volume" : "2021",
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/AGRAVITY BOYS": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Agravity Boys (2020)",
+        "name": "Agravity Boys (2020) Issue #",
+        "funcion": "primero",
+        "Series" : "Agravity Boys",
+        "Volume" : "2020",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/ReadComicOnline (EN)/The Flash (2016)": {
         "destino": "/media/cristian/Datos/Comics/Reader/DC Comics/The Flash (2016)",
         "name": "The Flash (2016) Issue #",
-        "funcion": "ReadComicOnline (EN)",
-        "provider" : "ReadComicOnline (EN)",
-        "slug":  "4050-91750",
+        "funcion": "ultimo",
         "Series" : "The Flash",
         "Volume" : "2016",
         "Publisher" : "DC Comics"
@@ -642,9 +458,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Tensei Shitara Slime Datta Ken": {
         "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Tensei Shitara Slime Datta Ken (2015)",
         "name": "Tensei Shitara Slime Datta Ken (2015) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "tensei-shitara-slime-datta-ken",
+        "funcion": "ultimo",
         "Series" : "Tensei Shitara Slime Datta Ken",
         "Volume" : "2015",
         "Publisher" : "Kodansha"
@@ -652,19 +466,23 @@
     "/media/cristian/Datos/Comics/Tachiyomi/Webtoons.com (EN)/Roxy": {
         "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Roxy",
         "name": "Roxy Issue #",
-        "funcion": "Webtoons.com (EN)",
-        "provider" : "Webtoons.com (EN)",
-        "slug":  "undefined",
+        "funcion": "ultimo",
         "Series" : "Roxy",
         "Volume" : "",
         "Publisher" : "Webtoon"
     },
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Mori King, el rey del bosque": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Mori King El Rey del Bosque (2020)",
+        "name": "Mori King El Rey del Bosque (2020) Issue #",
+        "funcion": "primero",
+        "Series" : "Mori King El Rey del Bosque",
+        "Volume" : "2020",
+        "Publisher" : "Shueisha"
+    },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Edens Zero": {
         "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Edens Zero (2018)",
         "name": "Edens Zero (2018) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "edens-zero",
+        "funcion": "primero",
         "Series" : "Edens Zero",
         "Volume" : "2018",
         "Publisher" : "Kodansha"
@@ -672,9 +490,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Hunter Age": {
         "destino": "/media/cristian/Datos/Comics/Reader/Manhua/Hunter Age (2017)",
         "name": "Hunter Age (2017) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "hunter-age",
+        "funcion": "primero",
         "Series" : "Hunter Age",
         "Volume" : "2017",
         "Publisher" : "Manhua"
@@ -682,59 +498,39 @@
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Ayakashi Triangle": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Ayakashi Triangle (2020)",
         "name": "Ayakashi Triangle (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "ayakashi-triangle",
+        "funcion": "primero",
         "Series" : "Ayakashi Triangle",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
     },    
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Dragon Ball Super": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Dragon Ball Super (2015)",
-        "name": "Dragon Ball Super (2015) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "dragon-ball-super",
-        "Series" : "Dragon Ball Super",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Dragon Ball Super (2015)(NM)",
+        "name": "Dragon Ball Super (2015)(NM) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Dragon Ball Super (NM)",
         "Volume" : "2015",
         "Publisher" : "Shueisha"
     },
-    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Dragon Ball Super": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Dragon Ball Super (2015)",
-        "name": "Dragon Ball Super (2015) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "dragon-ball-super",
-        "Series" : "Dragon Ball Super",
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Platinum End": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Platinum End (2015)(NM)",
+        "name": "Platinum End (2015)(NM) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Platinum End (NM)",
         "Volume" : "2015",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Toaru Ossan no VRMMO Katsudouki": {
         "destino": "/media/cristian/Datos/Comics/Reader/Alpha Polis/Toaru Ossan no VRMMO Katsudouki (2014)",
         "name": "Toaru Ossan no VRMMO Katsudouki (2014) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "toaru-ossan-no-vrmmo-katsudouki-manga",
+        "funcion": "ultimo",
         "Series" : "Toaru Ossan no VRMMO Katsudouki",
         "Volume" : "2014",
         "Publisher" : "Alpha Polis"
     },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/TOARU OSSAN NO VRMMO KATSUDOUKI": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Alpha Polis/Toaru Ossan no VRMMO Katsudouki (2014)",
-        "name": "Toaru Ossan no VRMMO Katsudouki (2014) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEn (EN)",
-        "slug":  "toaru-ossan-no-vrmmo-katsudouki-manga",
-        "Series" : "Toaru Ossan no VRMMO Katsudouki",
-        "Volume" : "2014",
-        "Publisher" : "Alpha Polis"
-    },    
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/One Punch-Man": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/One Punch-Man (2012)",
         "name": "One Punch-Man (2012) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "one-punch-man",
+        "funcion": "primero",
         "Series" : "One Punch-Man",
         "Volume" : "2012",
         "Publisher" : "Shueisha"
@@ -742,29 +538,16 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/DUNGEON MESHI": {
         "destino": "/media/cristian/Datos/Comics/Reader/Enterbrain/Dungeon Meshi (2017)",
         "name": "Dungeon Meshi (2017) Issue #",
-        "provider" : "NineMangaEn (EN)",
-        "funcion": "NineMangaEs (ES)",
-        "Series": "Dungeon Meshi",
-        "Volume": "2017",
-        "Publisher": "Enterbrain",
-        "slug":  "dungeon-meshi"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Dungeon Meshi": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Enterbrain/Dungeon Meshi (2017)",
-        "name": "Dungeon Meshi (2017) Issue #",
-        "provider" : "NineMangaEs (ES)",
-        "funcion": "NineMangaEs (ES)",
-        "Series": "Dungeon Meshi",
-        "Volume": "2017",
-        "Publisher": "Enterbrain",
-        "slug":  "dungeon-meshi"
+        "funcion": "NineMangaEn (ES)",
+        "Series" : "Dungeon Meshi",
+        "Volume" : "2017",
+        "Publisher" : "Enterbrain",
+        "slug" :  "dungeon-meshi"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Burn the Witch": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Burn the Witch (2020)",
         "name": "Burn the Witch (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "burn-the-witch-manga",
+        "funcion": "primero",
         "Series" : "Burn the Witch",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
@@ -772,9 +555,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/ReadComicOnline (EN)/Batman (2016)": {
         "destino": "/media/cristian/Datos/Comics/Reader/DC Comics/Batman (2016)",
         "name": "Batman (2016) Issue #",
-        "funcion": "ReadComicOnline (EN)",
-        "provider" : "ReadComicOnline (EN)",
-        "slug":  "4050-91273",
+        "funcion": "ultimo",
         "Series" : "Batman",
         "Volume" : "2016",
         "Publisher" : "DC Comics"
@@ -782,9 +563,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/Phantom Seer": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Phantom Seer (2020)",
         "name": "Phantom Seer (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (EN)",
-        "provider" : "MANGA Plus by SHUEISHA (EN)",
-        "slug":  "phantom-seer",
+        "funcion": "primero",
         "Series" : "Phantom Seer",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
@@ -792,9 +571,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/Build King": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Build King (2020)",
         "name": "Build King (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (EN)",
-        "provider" : "MANGA Plus by SHUEISHA (EN)",
-        "slug":  "build-king-2020",
+        "funcion": "primero",
         "Series" : "Build King",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
@@ -802,9 +579,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/SAKAMOTO DAYS": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Sakamoto Days (2020)",
         "name": "Sakamoto Days (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "sakamoto-days",
+        "funcion": "primero",
         "Series" : "Sakamoto Days",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
@@ -812,9 +587,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Aragane no ko. Diamante en bruto": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Aragane no ko (2020)",
         "name": "Aragane no ko (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "aragane-no-ko",
+        "funcion": "primero",
         "Series" : "Aragane no ko",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
@@ -822,29 +595,48 @@
     "/media/cristian/Datos/Comics/Tachiyomi/ReadComicOnline (EN)/Spider-Man (2019)": {
         "destino": "/media/cristian/Datos/Comics/Reader/Marvel/Spider-Man (2019)",
         "name": "Spider-Man (2019) Issue #",
-        "funcion": "ReadComicOnline (EN)",
-        "provider" : "ReadComicOnline (EN)",
-        "slug":  "4050-121420",
+        "funcion": "ultimo",
         "Series" : "Spider-Man",
         "Volume" : "2019",
         "Publisher" : "Marvel"
     },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Boku no Hero Academia": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/My Hero Academia (2014)(NM)",
+        "name": "My Hero Academia (2014)(NM) Issue #",
+        "funcion": "primero",
+        "Series" : "My Hero Academia (NM)",
+        "Volume" : "2014",
+        "Publisher" : "Shueisha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Boruto_ Naruto Next Generations": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Boruto Naruto Next Generation (2016)(MP)",
+        "name": "Boruto (2016)(MP) Issue #",
+        "funcion": "primero",
+        "Series" : "Boruto (MMP)",
+        "Volume" : "2016",
+        "Publisher" : "Shueisha"
+    },
     "/media/cristian/Datos/Comics/Tachiyomi/ReadComicOnline (EN)/Fantastic Four (2018)": {
         "destino": "/media/cristian/Datos/Comics/Reader/Marvel/Fantastic Four (2018)",
         "name": "Fantastic Four (2018) Issue #",
-        "funcion": "ReadComicOnline (EN)",
-        "provider" : "ReadComicOnline (EN)",
-        "slug":  "4050-112685",
+        "funcion": "ultimo",
         "Series" : "Fantastic Four",
         "Volume" : "2018",
         "Publisher" : "Marvel"
     },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Dungeon Meshi": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Enterbrain/Dungeon Meshi (2017)",
+        "name": "Dungeon Meshi (2017) Issue #",
+        "funcion": "NineMangaEs (ES)",
+        "Series" : "Dungeon Meshi",
+        "Volume" : "2017",
+        "Publisher" : "Enterbrain",
+        "slug" :  "dungeon-meshi"
+    },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Berserk": {
         "destino": "/media/cristian/Datos/Comics/Reader/Hakusensha/Berserk (1989)",
         "name": "Berserk (1989) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "berserk",
+        "funcion": "ultimo",
         "Series" : "Berserk",
         "Volume" : "1989",
         "Publisher" : "Hakusensha"
@@ -852,9 +644,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/ReadComicOnline (EN)/Spider-Man (2016)": {
         "destino": "/media/cristian/Datos/Comics/Reader/Marvel/Spider-Man (2016)",
         "name": "Spider-Man (2016) Issue #",
-        "funcion": "ReadComicOnline (EN)",
-        "provider" : "ReadComicOnline (EN)",
-        "slug":  "4050-92591",
+        "funcion": "ultimo",
         "Series" : "Spider-Man",
         "Volume" : "2016",
         "Publisher" : "Marvel"
@@ -862,19 +652,23 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Grand Blue": {
         "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Grand Blue (2014)",
         "name": "Grand Blue (2014) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "grand-blue",
+        "funcion": "ultimo",
         "Series" : "Grand Blue",
         "Volume" : "2014",
         "Publisher" : "Kodansha"
     },
+    "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Dragon Ball Super": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Dragon Ball Super (2015)(MP)",
+        "name": "Dragon Ball Super (2015)(MP)",
+        "funcion": "primero",
+        "Series" : "Dragon Ball Super (MP)",
+        "Volume" : "2015",
+        "Publisher" : "Shueisha"
+    },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Goblin Slayer": {
         "destino": "/media/cristian/Datos/Comics/Reader/Square Enix/Goblin Slayer (2016)",
         "name": "Goblin Slayer (2016) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "goblin-slayer",
+        "funcion": "ultimo",
         "Series" : "Goblin Slayer",
         "Volume" : "2016",
         "Publisher" : "Square Enix"
@@ -882,99 +676,111 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Horimiya": {
         "destino": "/media/cristian/Datos/Comics/Reader/Square Enix/Horimiya (2008)",
         "name": "Horimiya (2008) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "horimiya",
+        "funcion": "ultimo",
         "Series" : "Horimiya",
         "Volume" : "2008",
         "Publisher" : "Square Enix"
     },
+    "/media/cristian/Datos/Comics/Tachiyomi/Webtoons.com (EN)/The Gamer": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/The Gamer (2013)(EN)",
+        "name": "The Gamer (2013)(EN) Issue #",
+        "funcion": "ultimo",
+        "Series" : "The Gamer (EN)",
+        "Volume" : "2013",
+        "Publisher" : "Webtoon"
+    },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Saiki Kusuo no Psi Nan": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Saiki Kusuo no Psi Nan (2012)",
         "name": "Saiki Kusuo no Psi Nan (2012) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "saiki-kusuo-no-nan-shidou-hen",
+        "funcion": "ultimo",
         "Series" : "Saiki Kusuo no Psi Nan",
         "Volume" : "2012",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/Hajime no Ippo": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Hajime no Ippo (1990)",
-        "name": "Hajime no Ippo (1990) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEn (EN)",
-        "slug":  "hajime-no-ippo",
-        "Series" : "Hajime no Ippo",
+        "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Hajime no Ippo (1990)(EN)",
+        "name": "Hajime no Ippo (1990)(EN) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Hajime no Ippo (EN)",
         "Volume" : "1990",
         "Publisher" : "Kodansha"
     },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Hajime no Ippo": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Hajime no Ippo (1990)",
-        "name": "Hajime no Ippo (1990) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "hajime-no-ippo",
-        "Series" : "Hajime no Ippo",
-        "Volume" : "1990",
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/Baby Steps": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Baby Steps (2009)(EN)",
+        "name": "Baby Steps (2009)(EN) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Baby Steps (EN)",
+        "Volume" : "2009",
+        "Publisher" : "Kodansha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/Mangakakalot (EN)/Baby Steps": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Baby Steps (2009)(EN)",
+        "name": "Baby Steps (2009)(EN) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Baby Steps (EN)",
+        "Volume" : "2009",
         "Publisher" : "Kodansha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Enen no Shouboutai": {
         "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Fire Force (2015)",
         "name": "Fire Force (2015) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "enen-no-shouboutai",
+        "funcion": "primero",
         "Series" : "Fire Force",
         "Volume" : "2015",
         "Publisher" : "Kodansha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/Chainsaw Man": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Chainsaw Man (2018)",
-        "name": "Chainsaw Man (2018) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (EN)",
-        "slug":  "chainsawman",
-        "Series" : "Chainsaw Man",
-        "Volume" : "2018",
-        "Publisher" : "Shueisha"
-    },
-    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Chainsaw Man": {
-        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Chainsaw Man (2018)",
-        "name": "Chainsaw Man (2018) Issue #",
-        "funcion": "NineMangaEs (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "chainsawman",
-        "Series" : "Chainsaw Man",
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Chainsaw Man (2018)(MP)",
+        "name": "Chainsaw Man (2018)(MP) Issue #",
+        "funcion": "primero",
+        "Series" : "Chainsaw Man (MP)",
         "Volume" : "2018",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/Me & Roboco": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Me & Roboco (2020)",
         "name": "Me & Roboco (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (EN)",
-        "provider" : "MANGA Plus by SHUEISHA (EN)",
-        "slug":  "boku-to-roboko",
+        "funcion": "primero",
         "Series" : "Me & Roboco",
         "Volume" : "2020",
+        "Publisher" : "Shueisha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Vigilante_ Boku no Hero Academia Illegals": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Vigilante My hero Academia Illegals (2016)(NM)",
+        "name": "Vigilante My hero Academia Illegals (2016)(NM) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Vigilante My hero Academia Illegals (NM)",
+        "Volume" : "2016",
         "Publisher" : "Shueisha"
     },
     "/media/cristian/Datos/Comics/Tachiyomi/ReadComicOnline (EN)/The Amazing Spider-Man (2018)": {
         "destino": "/media/cristian/Datos/Comics/Reader/Marvel/The Amazing Spider-Man (2018)",
         "name": "The Amazing Spider-Man (2018) Issue #",
-        "funcion": "ReadComicOnline (EN)",
-        "provider" : "ReadComicOnline (EN)",
-        "slug":  "4050-112161",
+        "funcion": "ultimo",
         "Series" : "The Amazing Spider-Man",
         "Volume" : "2018",
         "Publisher" : "Marvel"
     },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Hajime no Ippo": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Kodansha/Hajime no Ippo (1990)(ES)",
+        "name": "Hajime no Ippo (1990)(ES) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Hajime no Ippo (ES)",
+        "Volume" : "1990",
+        "Publisher" : "Kodansha"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEs (ES)/Chainsaw Man": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Chainsaw Man (2018)(NM)",
+        "name": "Chainsaw Man (2018)(NM) Issue #",
+        "funcion": "ultimo",
+        "Series" : "Chainsaw Man (NM)",
+        "Volume" : "2018",
+        "Publisher" : "Shueisha"
+    },
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (EN)/High School Family_ Kokosei Kazoku": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/High School Family Kokosei Kazoku (2020)",
         "name": "High School Family Kokosei Kazoku (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (EN)",
-        "provider" : "MANGA Plus by SHUEISHA (EN)",
-        "slug":  "koukousei-kazoku",
+        "funcion": "primero",
         "Series" : "High School Family Kokosei Kazoku",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
@@ -982,9 +788,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Esa gal de Hokkaido es demasiado linda": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Esa gal de Hokkaido es demasiado linda (2020)",
         "name": "Esa gal de Hokkaido es demasiado linda (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "dosanko-gyaru-wa-namaramenkoi-manga",
+        "funcion": "ultimo",
         "Series" : "Esa gal de Hokkaido es demasiado linda",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
@@ -992,19 +796,111 @@
     "/media/cristian/Datos/Comics/Tachiyomi/MANGA Plus by SHUEISHA (ES)/Nuestro pacto de sangre": {
         "destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Our Blood Oath",
         "name": "Our Blood Oath (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "MANGA Plus by SHUEISHA (ES)",
-        "slug":  "bokura-no-ketsumei",
+        "funcion": "primero",
         "Series" : "Our Blood Oath",
         "Volume" : "2020",
         "Publisher" : "Shueisha"
     },
+    "/media/cristian/Datos/Comics/Tachiyomi/El Vosque/El Vosque": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/El Vosque",
+        "name": "El Vosque Issue #",
+        "funcion": "ultimo",
+        "Series" : "El Vosque",
+        "Volume" : "",
+        "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/El Vosque/Arded maderos arded": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Arded maderos arded",
+        "name": "Arded maderos arded Issue #",
+        "funcion": "ultimo",
+        "Series" : "Arded maderos arded",
+        "Volume" : "",
+        "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/El Vosque/Como hacer el mal bien": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Como hacer el mal bien",
+        "name": "Como hacer el mal bien Issue #",
+        "funcion": "ultimo",
+        "Series" : "Como hacer el mal bien",
+        "Volume" : "",
+        "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/El Vosque/Como visitar El Vosque y morir en el intento": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Como visitar El Vosque y morir en el intento",
+        "name": "Como visitar El Vosque y morir en el intento Issue #",
+        "funcion": "ultimo",
+        "Series" : "Como visitar El Vosque y morir en el intento",
+        "Volume" : "",
+        "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/El Vosque/CSI El Vosque": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/CSI El Vosque",
+        "name": "CSI El Vosque Issue #",
+        "funcion": "ultimo",
+        "Series" : "CSI El Vosque",
+        "Volume" : "",
+        "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/El Vosque/Diccionario de Fantasia": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Diccionario de Fantasia",
+        "name": "Diccionario de Fantasia Issue #",
+        "funcion": "ultimo",
+        "Series" : "Diccionario de Fantasia",
+        "Volume" : "",
+        "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/El Vosque/El abominable hada de las nieves": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/El abominable hada de las nieves",
+        "name": "El abominable hada de las nieves Issue #",
+        "funcion": "ultimo",
+        "Series" : "El abominable hada de las nieves",
+        "Volume" : "",
+        "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/El Vosque/El elfo inhumano": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/El elfo inhumano",
+        "name": "El elfo inhumano Issue #",
+        "funcion": "ultimo",
+        "Series" : "El elfo inhumano",
+        "Volume" : "",
+        "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/El Vosque/El palo": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/El palo",
+        "name": "El palo Issue #",
+        "funcion": "ultimo",
+        "Series" : "El palo",
+        "Volume" : "",
+        "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/El Vosque/Jaleo Real": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Jaleo Real",
+        "name": "Jaleo Real Issue #",
+        "funcion": "ultimo",
+        "Series" : "Jaleo Real",
+        "Volume" : "",
+        "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/El Vosque/Una de Piratas": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Una de Piratas",
+        "name": "Una de Piratas Issue #",
+        "funcion": "ultimo",
+        "Series" : "Una de Piratas",
+        "Volume" : "",
+        "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/El Vosque/Woodies": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Woodies",
+        "name": "Woodies Issue #",
+        "funcion": "ultimo",
+        "Series" : "Woodies",
+        "Volume" : "",
+        "Publisher" : "Webtoon"
+    },
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/Ascendance of a Bookworm ~I'll Do Anything to Become a Librarian~ Part 2 「I'll Become a Shrine Maiden for Books!」": {
         "destino": "/media/cristian/Datos/Comics/Reader/Corona Comics/Ascendance of a Bookworm (2018)",
         "name": "Ascendance of a Bookworm (2018) Issue #",
-        "funcion": "NineMangaEn (EN)",
-        "provider" : "NineMangaEn (EN)",
-        "slug":  "honzuki-no-gekokujou-shisho-ni-naru-tame-ni-wa-shudan-wo-erandeiraremasen-dai-2-bu-hon-no-tamenara-miko-ni-naru",
+        "funcion": "ultimo",
         "Series" : "Ascendance of a Bookworm",
         "Volume" : "2018",
         "Publisher" : "Corona Comics"
@@ -1012,9 +908,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/Ascendance o": {
         "destino": "/media/cristian/Datos/Comics/Reader/Corona Comics/Ascendance of a Bookworm (2018)",
         "name": "Ascendance of a Bookworm (2018) Issue #",
-        "funcion": "NineMangaEn (EN)",
-        "provider" : "NineMangaEn (EN)",
-        "slug":  "honzuki-no-gekokujou-shisho-ni-naru-tame-ni-wa-shudan-wo-erandeiraremasen-dai-2-bu-hon-no-tamenara-miko-ni-naru",
+        "funcion": "ultimo",
         "Series" : "Ascendance of a Bookworm",
         "Volume" : "2018",
         "Publisher" : "Corona Comics"
@@ -1022,9 +916,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/Honzuki no Gekokujou ~Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen~ Dai 2-bu 「Hon no Tamenara Miko ni Naru!」": {
         "destino": "/media/cristian/Datos/Comics/Reader/Corona Comics/Honzuki no Gekokujou (2018)",
         "name": "Honzuki no Gekokujou (2018) Issue #",
-        "funcion": "NineMangaEn (EN)",
-        "provider" : "NineMangaEn (EN)",
-        "slug":  "honzuki-no-gekokujou-shisho-ni-naru-tame-ni-wa-shudan-wo-erandeiraremasen-dai-2-bu-hon-no-tamenara-miko-ni-naru",
+        "funcion": "ultimo",
         "Series" : "Honzuki no Gekokujou",
         "Volume" : "2018",
         "Publisher" : "Corona Comics"
@@ -1032,9 +924,7 @@
     "/media/cristian/Datos/Comics/Tachiyomi/NineMangaEn (EN)/Honzuki no G": {
         "destino": "/media/cristian/Datos/Comics/Reader/Corona Comics/Honzuki no Gekokujou (2018)",
         "name": "Honzuki no Gekokujou (2018) Issue #",
-        "funcion": "NineMangaEn (EN)",
-        "provider" : "NineMangaEn (EN)",
-        "slug":  "honzuki-no-gekokujou-shisho-ni-naru-tame-ni-wa-shudan-wo-erandeiraremasen-dai-2-bu-hon-no-tamenara-miko-ni-naru",
+        "funcion": "ultimo",
         "Series" : "Honzuki no Gekokujou",
         "Volume" : "2018",
         "Publisher" : "Corona Comics"
@@ -1042,11 +932,17 @@
     "/media/cristian/Datos/Comics/Tachiyomi/Webtoons.com (EN)/Sarah's Scribbles": {
         "destino": "/media/cristian/Datos/Comics/Reader/Webtoon/Sarah's Scribbles (2016)",
         "name": "Sarah's Scribbles (2016) Issue #",
-        "funcion": "Webtoons.com (EN)",
-        "provider" : "Webtoons.com (EN)",
-        "slug":  "undefined",
+        "funcion": "ultimo",
         "Series" : "Sarah's Scribbles",
         "Volume" : "2016",
         "Publisher" : "Webtoon"
+    },
+    "/media/cristian/Datos/Comics/Tachiyomi/Manually/Dark One": {
+        "destino": "/media/cristian/Datos/Comics/Reader/Vault Comics/Dark One (2020)",
+        "name": "Dark One (2020) Issue #",
+        "funcion": "primero",
+        "Series" : "Dark One",
+        "Volume" : "2020",
+        "Publisher" : "Vault Comics"
     }
 }
