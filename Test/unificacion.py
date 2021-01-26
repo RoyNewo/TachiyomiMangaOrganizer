@@ -63,9 +63,9 @@ def main():
 
     mensaj = []
     mensaj2 = []
-    with open('/home/cristian/Github/TachiyomiMangaOrganizer/secrets.json') as json_file2:
+    with open('/opt/tachiyomimangaexporter/secrets.json') as json_file2:
         secrets = json.load(json_file2)
-    with open('/home/cristian/Github/TachiyomiMangaOrganizer/history.json') as json_file3:
+    with open('/opt/tachiyomimangaexporter/history.json') as json_file3:
         history = json.load(json_file3)
 
     for contador in (range(len(providers))):
@@ -98,7 +98,7 @@ def main():
                         #         temporal, mensaj, mensaj2, history)
 
                     # mover(manga[key],path4,file3)
-                with open('/home/cristian/Github/TachiyomiMangaOrganizer/history.json', 'w') as outfile:
+                with open('/opt/tachiyomimangaexporter/history.json', 'w') as outfile:
                     json.dump(history, outfile)
                 # send(mensaj, mensaj2, secrets['token'], secrets['chatid'])
                 try:

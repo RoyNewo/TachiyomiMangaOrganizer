@@ -143,9 +143,9 @@ def primero(dic, finalpath, namefile, mensaj):
 def main():
     mensaj = []
     
-    with open('/home/cristian/Github/TachiyomiMangaOrganizer/mangas.json') as json_file:
+    with open('/opt/tachiyomimangaexporter/mangas.json') as json_file:
         mangas = json.load(json_file)
-    with open('/home/cristian/Github/TachiyomiMangaOrganizer/secrets.json') as json_file2:
+    with open('/opt/tachiyomimangaexporter/secrets.json') as json_file2:
         secrets = json.load(json_file2)
     conect = "adb connect " + secrets['ip']
     os.system(conect)

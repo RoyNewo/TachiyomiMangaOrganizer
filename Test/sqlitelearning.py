@@ -79,9 +79,9 @@ def main():
     database = "/media/cristian/Datos/Comics/Buffer/databases/tachiyomi.db"
     # mensaj = []
     
-    # with open('/home/cristian/Github/TachiyomiMangaOrganizer/mangas.json') as json_file:
+    # with open('/opt/tachiyomimangaexporter/mangas.json') as json_file:
     #     mangas = json.load(json_file)
-    # with open('/home/cristian/Github/TachiyomiMangaOrganizer/secrets.json') as json_file2:
+    # with open('/opt/tachiyomimangaexporter/secrets.json') as json_file2:
     #     secrets = json.load(json_file2)
 
     # create a database connection

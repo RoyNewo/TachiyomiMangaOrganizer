@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import nmap3
 import json
 import os
 import re
@@ -9,7 +10,6 @@ from zipfile import ZipFile
 import time
 from subprocess import Popen, PIPE, call
 import telegram
-
 
 def send(msg, msg2, tok, cid):
     """
@@ -51,33 +51,26 @@ def send(msg, msg2, tok, cid):
 
 
 def conexion(secret):
-    output = ''
-    count = 0
-    while output == '' and count < 10:
-        arp = Popen(['/usr/sbin/arp', '-n'], stdout=PIPE)
-        grep = Popen(['/bin/grep', '-i', 'b8:27:eb:95:9f:bd'],
-                     stdin=arp.stdout, stdout=PIPE)
-        arp.stdout.close()
-        cut = Popen(['/usr/bin/cut', '-d', ' ', '-f1'],
-                    stdin=grep.stdout, stdout=PIPE)
-        grep.stdout.close()
-
-        output = cut.communicate()[0].decode('utf-8').strip()
-        print(output, secret['ip'])
-        # secret['ip'] = output
-        if output != secret['ip']:
-            secret['ip'] = output
-            with open('/opt/tachiyomimangaexporter/secrets.json', 'w') as outfile:
-                json.dump(secret, outfile)
-        elif output == '':
-            for ping in range(1, 255):
-                address = "192.168.1." + str(ping)
-                call(['ping', '-c', '3', address])
-        count += 1
-
-    conect = "adb connect " + output + ":5555"
-
-    return conect
+    nmap = nmap3.Nmap()
+    results = nmap.scan_top_ports("192.168.1.0/24", args="-sP -n")
+    conect = ''
+    # print(json.dumps(results))
+    for key in results:
+        # print(key)
+        if "macaddress" in results[key]:
+            if results[key]["macaddress"] != None:
+                if "addr" in results[key]["macaddress"]:
+                    if results[key]["macaddress"]["addr"] == "B8:27:EB:95:9F:BD":
+                        # print(key)
+                        if key != secret['ip']:
+                            secret['ip'] = key
+                            with open('/config/secrets.json', 'w') as outfile:
+                                json.dump(secret, outfile)
+                        conect = key
+    if conect != '':
+        return conect
+    else:
+        return None
 
 
 def isfloat(x):
@@ -244,7 +237,7 @@ def organizer(elemento, dic, finalpath, mensaj, mensaj2, history):
 
     if fecha != '':
         # print(fecha)
-        if historial(history, fecha, dic):
+        if historial(history, issue, dic):
             generatexml(dic, finalpath, fecha)
             cbz = dic['destino'] + "/" + dic['name'] + fecha + ".cbz"
             archivos = os.listdir(finalpath)
@@ -274,14 +267,14 @@ def main():
     mensaj = []
     mensaj2 = []
 
-    with open('/opt/tachiyomimangaexporter/mangas.json') as json_file:
+    with open('/config/mangas.json') as json_file:
         mangas = json.load(json_file)
-    with open('/opt/tachiyomimangaexporter/secrets.json') as json_file2:
+    with open('/config/secrets.json') as json_file2:
         secrets = json.load(json_file2)
-    with open('/opt/tachiyomimangaexporter/history.json') as json_file3:
+    with open('/config/history.json') as json_file3:
         history = json.load(json_file3)
-    # conect = "adb connect " + secrets['ip']
-    os.system(conexion(secrets))
+    conect = "adb connect " + conexion(secrets) + ":5555"
+    os.system(conect)
     time.sleep(5)
     os.system("adb pull /storage/emulated/0/Tachiyomi /media/cristian/Datos/Comics")
     path = "/media/cristian/Datos/Comics/Tachiyomi"
@@ -302,7 +295,7 @@ def main():
                                 path4 = path3 + "/" + file3
                                 organizer([file2, file3], mangas[path3],
                                           path4, mensaj, mensaj2, history)
-    with open('/opt/tachiyomimangaexporter/history.json', 'w') as outfile:
+    with open('/config/history.json', 'w') as outfile:
         json.dump(history, outfile)
     os.system(
         'adb shell "find /storage/emulated/0/Tachiyomi/ -type d -mindepth 3 -exec rm -rf "{}" \;"')

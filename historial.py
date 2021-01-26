@@ -51,11 +51,11 @@ def main():
 
     # guardados = ["Tower of God", "Hunter X Hunter", "Platinum End", "Blue Exorcist", "Vigilante My hero Academia Illegals", "Mashle", "Jujutsu Kaisen", "Baby Steps", "Black Clover", "Gokushufudou", "Dr Stone", "One Piece", "My Hero Academia", "The Gamer", "Spy X Family", "Boruto", "Dragon Ball Super", "Dungeon Meshi",  "Hajime no Ippo", "Chainsaw Man"]
 
-    with open('/home/cristian/Github/TachiyomiMangaOrganizer/mangas.json') as json_file:
+    with open('/opt/tachiyomimangaexporter/mangas.json') as json_file:
         mangas = json.load(json_file)
-    with open('/home/cristian/Github/TachiyomiMangaOrganizer/secrets.json') as json_file2:
+    with open('/opt/tachiyomimangaexporter/secrets.json') as json_file2:
         secrets = json.load(json_file2)
-    with open('/home/cristian/Github/TachiyomiMangaOrganizer/history.json') as json_file3:
+    with open('/opt/tachiyomimangaexporter/history.json') as json_file3:
         history = json.load(json_file3)
 
     for key in mangas:
@@ -72,7 +72,7 @@ def main():
                     filename = os.path.splitext(file1)
                     issue = filename[0].split("#")
                     dummy = historial(history, issue[-1], mangas[key])
-            with open('/home/cristian/Github/TachiyomiMangaOrganizer/history.json', 'w') as outfile:
+            with open('/opt/tachiyomimangaexporter/history.json', 'w') as outfile:
                 json.dump(history, outfile)
     
 
