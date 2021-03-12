@@ -14,7 +14,9 @@ RUN apt-get update \
 && cd /python3-nmap\
 && pip install -r requirements.txt\
 && cd /app\
-&& pip install -r requirements.txt
+&& pip install -r requirements.txt\
+&& rm -rf /python3-nmap\
+&& rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 

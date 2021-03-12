@@ -9,28 +9,17 @@ from zipfile import ZipFile
 import time
 from subprocess import Popen, PIPE, call
 import telegram
-from MangaExporter import send, isfloat, isint, generatexml, organizer
-
-def inicializar(manga):
-    os.makedirs(manga["destino"])
-    url = "https://kitsu.io/api/edge/manga?filter[slug]=" + manga['slug']
-    response = requests.get(url)
-    data = response.json()
-    image = requests.get(data["data"][0]["attributes"]["posterImage"]["large"])
-    imagesave = str(manga["destino"] + "/poster.jpg")
-    with open(imagesave, "wb") as f:
-        f.write(image.content)
-
+from MangaExporter import send, isfloat, isint, generatexml, organizer, posterc, posterm
 
 def main():
-    manga = {"destino": "/media/cristian/Datos/Comics/Reader/Shueisha/Undead plus Unluck (2020)",
-        "name": "Undead plus Unluck (2020) Issue #",
-        "funcion": "MANGA Plus by SHUEISHA (ES)",
-        "provider" : "NineMangaEs (ES)",
-        "slug":  "undead-unluck",
-        "Series" : "Undead plus Unluck",
-        "Volume" : "2020",
-        "Publisher" : "Shueisha"}
+    manga = {"destino": "/media/cristian/Datos/Comics/Reader/Team Cherry/Hollow Knight Chapter One Quirrel (2017)",
+        "name": "Hollow Knight Chapter One Quirrel (2017) Issue #",
+        "funcion": "Team Cherry",
+        "provider" : "Team Cherry",
+        "slug":  "undefined",
+        "Series" : "Hollow Knight Chapter One Quirrel",
+        "Volume" : "2017",
+        "Publisher" : "Team Cherry"}
     mensaj = []
     mensaj2 = []
     with open('/opt/tachiyomimangaexporter/secrets.json') as json_file2:
@@ -38,9 +27,15 @@ def main():
     with open('/opt/tachiyomimangaexporter/history.json') as json_file3:
         history = json.load(json_file3)
     if not os.path.exists(manga["destino"]):
-        inicializar(manga)
+        os.makedirs(manga["destino"])
+    if manga["slug"] != "undefined":
+            if not os.path.exists(manga["destino"] + '/poster.jpg'):
+                if manga["Publisher"] == "DC Comics" or manga["Publisher"] == "Marvel":
+                    posterc(manga)
+                else:
+                    posterm(manga)
     file2 = manga["Series"]
-    path3 = "/media/cristian/Datos/Comics/Tachiyomi/Manually/Undead Unluck"
+    path3 = "/media/cristian/Datos/Comics/Tachiyomi/Manually/Hollow Knight"
     files2 = os.listdir(path3)
     for file3 in files2:
         path4 = path3 + "/" + file3

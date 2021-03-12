@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import nmap3
 import json
 import os
 import re
@@ -9,7 +10,52 @@ from zipfile import ZipFile
 import time
 from subprocess import Popen, PIPE, call
 import telegram
+import sys
+import traceback
+import requests
+import glob
 
+def posterm(manga):
+    url = "https://kitsu.io/api/edge/manga?filter[slug]=" + manga['slug']
+    response = requests.get(url)
+    data = response.json()
+    image = requests.get(data["data"][0]["attributes"]["posterImage"]["large"])
+    imagesave = str(manga["destino"] + "/poster.jpg")
+    with open(imagesave, "wb") as f:
+        f.write(image.content)
+
+def posterc(manga):
+    print(manga["Series"])
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36'}
+    url = "https://comicvine.gamespot.com/api/volume/" + manga['slug'] + "/?api_key=dcb22bb374f04e7217eaca81f2fcfffbe5062e42&format=json"
+    response = requests.get(url, headers=headers)
+    print(url, response)
+    data = response.json()
+    image = requests.get(data["results"]["image"]["super_url"])
+    imagesave = str(manga["destino"] + "/poster.jpg")
+    with open(imagesave, "wb") as f:
+        f.write(image.content)
+
+
+
+def my_exception_hook(type, value, tb):
+    with open('/opt/tachiyomimangaexporter/secrets.json') as json_file2:
+        secretos = json.load(json_file2)
+    traceback_details = '\n'.join(traceback.extract_tb(tb).format())
+    error_msg = "Mangaexporter: An exception has been raised outside of a try/except!!!\n" \
+        f"Type: {type}\n" \
+        f"Value: {value}\n" \
+        f"Traceback: {traceback_details}"
+    print(error_msg)
+    
+    n = 4000
+    for i in range(0, len(error_msg), n):
+        bot = telegram.Bot(
+                    token=secretos['token'])
+        bot.sendMessage(chat_id=secretos['chatid'], text=error_msg[i:i+n])
+        time.sleep(2)
+
+        
 
 def send(msg, msg2, tok, cid):
     """
@@ -51,33 +97,26 @@ def send(msg, msg2, tok, cid):
 
 
 def conexion(secret):
-    output = ''
-    count = 0
-    while output == '' and count < 10:
-        arp = Popen(['/usr/sbin/arp', '-n'], stdout=PIPE)
-        grep = Popen(['/bin/grep', '-i', 'b8:27:eb:95:9f:bd'],
-                     stdin=arp.stdout, stdout=PIPE)
-        arp.stdout.close()
-        cut = Popen(['/usr/bin/cut', '-d', ' ', '-f1'],
-                    stdin=grep.stdout, stdout=PIPE)
-        grep.stdout.close()
-
-        output = cut.communicate()[0].decode('utf-8').strip()
-        print(output, secret['ip'])
-        # secret['ip'] = output
-        if output != secret['ip']:
-            secret['ip'] = output
-            with open('/opt/tachiyomimangaexporter/secrets.json', 'w') as outfile:
-                json.dump(secret, outfile)
-        elif output == '':
-            for ping in range(1, 255):
-                address = "192.168.1." + str(ping)
-                call(['ping', '-c', '3', address])
-        count += 1
-
-    conect = "adb connect " + output + ":5555"
-
-    return conect
+    nmap = nmap3.Nmap()
+    results = nmap.scan_top_ports("192.168.1.0/24", args="-sP -n")
+    conect = ''
+    # print(json.dumps(results))
+    for key in results:
+        # print(key)
+        if "macaddress" in results[key]:
+            if results[key]["macaddress"] != None:
+                if "addr" in results[key]["macaddress"]:
+                    if results[key]["macaddress"]["addr"] == "B8:27:EB:95:9F:BD":
+                        # print(key)
+                        if key != secret['ip']:
+                            secret['ip'] = key
+                            with open('/config/secrets.json', 'w') as outfile:
+                                json.dump(secret, outfile)
+                        conect = key
+    if conect != '':
+        return conect
+    else:
+        return None
 
 
 def isfloat(x):
@@ -118,8 +157,8 @@ def historial(history, issue, dic):
         if issue in history[dic["Series"]]:
             if dic["provider"] != history[dic["Series"]][issue]:
                 if dic["funcion"] != history[dic["Series"]][issue]:
-                    history[dic["Series"]].update({issue: dic["provider"]})
-                    return True
+                    history[dic["Series"]].pop(issue, None)
+                    return 'update'
                 else:
                     return False
             else:
@@ -133,6 +172,14 @@ def historial(history, issue, dic):
 
 
 def organizer(elemento, dic, finalpath, mensaj, mensaj2, history):
+    if not os.path.exists(dic["destino"]):
+        os.makedirs(dic["destino"])
+    if dic["slug"] != "undefined":
+            if not os.path.exists(dic["destino"] + '/poster.jpg'):
+                if dic["Publisher"] == "DC Comics" or dic["Publisher"] == "Marvel":
+                    posterc(dic)
+                else:
+                    posterm(dic)
     tilde = False
     tags = ['ep', 'ch', 'chapter', 'chapterr', 'chap',
             'episodio', 'capitulo', 'num', 'issue', 'generations']
@@ -203,7 +250,10 @@ def organizer(elemento, dic, finalpath, mensaj, mensaj2, history):
             else:
                 if isfloat(numero):
                     issue = '{:0>6}'.format(numero)
-            if historial(history, issue, dic):
+            historeturn = historial(history, issue, dic)
+            # print(historeturn)
+            if historeturn == True:
+                # print('pasa por aqui')                
                 generatexml(dic, finalpath, issue)
                 cbz = dic['destino'] + "/" + dic['name'] + issue + ".cbz"
                 archivos = os.listdir(finalpath)
@@ -219,16 +269,36 @@ def organizer(elemento, dic, finalpath, mensaj, mensaj2, history):
                     print('Error while deleting directory')
 
                 mensaj.append(dic['name'] + issue + "\n\n")
-            else:
+            if historeturn == False:
                 try:
                     shutil.rmtree(finalpath)
                 except:
                     print('Error while deleting directory')
                 mensaj2.append(
                     finalpath + " El Issue existe con el proveedor correcto \n\n")
+            if historeturn == 'update':
+                generatexml(dic, finalpath, issue)
+                cbz = '/media/cristian/Datos/Comics/Tachiyomi/Updates/' + dic['name'] + issue + ".cbz"
+                eliminado = dic['destino'] + "/" + dic['name'] + issue + ".cbz"
+                archivos = os.listdir(finalpath)
+                archivos.sort()
+                zipobje = ZipFile(cbz, 'w')
+                for archivos2 in archivos:
+                    finalpath2 = finalpath + "/" + archivos2
+                    zipobje.write(finalpath2, basename(archivos2))
+                zipobje.close()
+                try:
+                    shutil.rmtree(finalpath)
+                except:
+                    print('Error while deleting directory')
+                try:
+                    os.remove(eliminado)
+                except:
+                    print('Error eliminado el archivo')
+                mensaj2.append(dic['name'] + issue + " eliminado para su futura actualizacion \n\n")
         else:
-            mensaj2.append(
-                finalpath + " Patron encontrado es: " + numero + "\n\n")
+            # mensaj2.append(
+            #     finalpath + " Patron encontrado es: " + numero + "\n\n")
             try:
                 shutil.move(
                     finalpath, "/media/cristian/Datos/Comics/Fallo/"+elemento[1])
@@ -244,7 +314,8 @@ def organizer(elemento, dic, finalpath, mensaj, mensaj2, history):
 
     if fecha != '':
         # print(fecha)
-        if historial(history, fecha, dic):
+        historeturn = historial(history, fecha, dic)
+        if historeturn == True:
             generatexml(dic, finalpath, fecha)
             cbz = dic['destino'] + "/" + dic['name'] + fecha + ".cbz"
             archivos = os.listdir(finalpath)
@@ -260,7 +331,7 @@ def organizer(elemento, dic, finalpath, mensaj, mensaj2, history):
                 print('Error while deleting directory')
 
             mensaj.append(dic['name'] + fecha + "\n\n")
-        else:
+        if historeturn == False:
             try:
                 shutil.rmtree(finalpath)
             except:
@@ -269,10 +340,36 @@ def organizer(elemento, dic, finalpath, mensaj, mensaj2, history):
                 finalpath + " El Issue existe con el proveedor correcto \n\n")
     tilde = False
 
+def issueupdate(secrets, history, mangas):
+    folder = '/media/cristian/Datos/Comics/Tachiyomi/Updates'
+    mensaje = []
+    mensaje2 = ''
+    if len(os.listdir(folder)) != 0:
+        updates = glob.glob(folder + '/**/*.[cC][bB][zZ]', recursive=True)
+        for issues in updates:
+            fichero = os.path.split(issues)
+            filename = os.path.splitext(fichero[1])
+            issue = filename[0].split("#")
+            name = issue[0] + '#'
+            for key in mangas:
+                if mangas[key]['name'] == name:
+                    historial(history, issue[-1], mangas[key])
+                    destino = str(mangas[key]['destino']) + '/' + str(fichero[1])                    
+                    namefile = str(fichero[0]) + '/' + str(fichero[1])
+                    shutil.move(namefile, destino)
+                    mensaje.append(str(mangas[key]['name']) + str(issue[-1]) + "\n\n")
+                    break
+        with open('/opt/tachiyomimangaexporter/history.json', 'w') as outfile:
+            json.dump(history, outfile)
+        send(mensaje, mensaje2, secrets['token'], secrets['chatid'])
+        time.sleep(2)
+        
 
 def main():
+    sys.excepthook = my_exception_hook
     mensaj = []
     mensaj2 = []
+    excludes = ['/media/cristian/Datos/Comics/Tachiyomi/automatic', '/media/cristian/Datos/Comics/Tachiyomi/Manually', '/media/cristian/Datos/Comics/Tachiyomi/Updates' ,'/media/cristian/Datos/Comics/Tachiyomi/backup']
 
     with open('/opt/tachiyomimangaexporter/mangas.json') as json_file:
         mangas = json.load(json_file)
@@ -280,8 +377,9 @@ def main():
         secrets = json.load(json_file2)
     with open('/opt/tachiyomimangaexporter/history.json') as json_file3:
         history = json.load(json_file3)
-    # conect = "adb connect " + secrets['ip']
-    os.system(conexion(secrets))
+    issueupdate(secrets, history, mangas)
+    conect = "adb connect " + conexion(secrets) + ":5555"
+    os.system(conect)
     time.sleep(5)
     os.system("adb pull /storage/emulated/0/Tachiyomi /media/cristian/Datos/Comics")
     path = "/media/cristian/Datos/Comics/Tachiyomi"
@@ -289,23 +387,28 @@ def main():
     dirs.sort()
     for file1 in dirs:
         path2 = path + "/" + file1
-        if path2 != '/media/cristian/Datos/Comics/Tachiyomi/automatic':
+        if path2 not in excludes:
             if os.path.isdir(path2):
                 files = os.listdir(path2)
                 for file2 in files:
                     path3 = path2 + "/" + file2
                     # print(path3)
-                    if path3 != '/media/cristian/Datos/Comics/Tachiyomi/backup/automatic':
-                        if os.path.isdir(path3):
-                            files2 = os.listdir(path3)
-                            for file3 in files2:
-                                path4 = path3 + "/" + file3
-                                organizer([file2, file3], mangas[path3],
-                                          path4, mensaj, mensaj2, history)
-    with open('/opt/tachiyomimangaexporter/history.json', 'w') as outfile:
-        json.dump(history, outfile)
+                    if path3 in mangas:
+                        if path3 not in excludes:
+                            if os.path.isdir(path3):
+                                files2 = os.listdir(path3)
+                                for file3 in files2:
+                                    path4 = path3 + "/" + file3 
+                                    organizer([file2, file3], mangas[path3],
+                                            path4, mensaj, mensaj2, history)
+                    else:
+                        shutil.move(path3, '/media/cristian/Datos/Comics/Tachiyomi/Manually')
+                        mensaj2.append(
+                            path3 + " El Manga no existe en la biblioteca y se ha movido a la carpeta Manually \n\n")
     os.system(
         'adb shell "find /storage/emulated/0/Tachiyomi/ -type d -mindepth 3 -exec rm -rf "{}" \;"')
+    with open('/opt/tachiyomimangaexporter/history.json', 'w') as outfile:
+        json.dump(history, outfile)
     send(mensaj, mensaj2, secrets['token'], secrets['chatid'])
 
 

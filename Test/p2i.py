@@ -6,8 +6,8 @@ from pdf2image import convert_from_path
 #  PDFSyntaxError
 # )
 
-images = convert_from_path('/media/cristian/Datos/Comics/Reader/Vault Comics/Dark One (2020)/Sanderson DARK ONE Ebook.pdf')
+images = convert_from_path('/media/cristian/Datos/Comics/Tachiyomi/Manually/Hollow_Knight_-_Comic_First_Chapter_Quirrel.pdf')
 
 for i, image in enumerate(images):
-    fname = "/media/cristian/Datos/Comics/Tachiyomi/Manually/Dark One/Dark One 01/" + '{:0>3}'.format(i) + ".png"
+    fname = "/media/cristian/Datos/Comics/Tachiyomi/Manually/Hollow Knight/Chapter 01 Quirrel/" + '{:0>3}'.format(i) + ".png"
     image.save(fname, "PNG")

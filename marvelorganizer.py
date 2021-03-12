@@ -36,7 +36,7 @@ def cbzgenerator(namefile):
     if not os.path.exists(destino + '/poster.jpg'):
         # print(manga["Series"])
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36'}
-        url = "https://comicvine.gamespot.com/api/volume/4050-85793/?api_key=dcb22bb374f04e7217eaca81f2fcfffbe5062e42&format=json"
+        url = "https://comicvine.gamespot.com/api/volume/4050-51110/?api_key=dcb22bb374f04e7217eaca81f2fcfffbe5062e42&format=json"
         response = requests.get(url, headers=headers)
         print(url, response)
         data = response.json()
@@ -61,7 +61,7 @@ def cbzgenerator(namefile):
         print('Error while deleting directory')
 
 def main():
-    path = "/media/cristian/Datos/Comics/Marvel/Vision (2015)"
+    path = "/media/cristian/Datos/Downloads/Comics/Scott Pilgrim (1-6) Color Edition (2012-2015) GetComics.INFO"
     # path = "/media/cristian/Datos/Comics/Buffer/cbr"
 
     # files = glob.glob(path + '/**/*.[cC][bB][rR]', recursive=True)
