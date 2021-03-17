@@ -18,7 +18,6 @@ def cbzgenerator(namefile):
         print ("Creation of the directory %s failed" % temporal)
 
     patoolib.extract_archive(namefile, outdir=temporal)
-    # os.rename(namefile, namefile + ".extraido")
     comicinfo = temporal + '/ComicInfo.xml'
     with open(comicinfo,"r") as xml_obj:
         #coverting the xml data to Python dictionary
@@ -26,7 +25,6 @@ def cbzgenerator(namefile):
         #closing the file
     xml_obj.close()
 
-    # print(json.dumps(my_dict))
     print(my_dict['ComicInfo']['Series'])
     destino = '/media/cristian/Datos/Comics/Reader/' + my_dict['ComicInfo']['Publisher'] + '/' + my_dict['ComicInfo']['Series'] + ' (' + my_dict['ComicInfo']['Volume'] + ')'
     destino = destino.replace(':', '')
@@ -34,9 +32,8 @@ def cbzgenerator(namefile):
     if not os.path.exists(destino):
         os.makedirs(destino)
     if not os.path.exists(destino + '/poster.jpg'):
-        # print(manga["Series"])
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36'}
-        url = "https://comicvine.gamespot.com/api/volume/4050-51110/?api_key=dcb22bb374f04e7217eaca81f2fcfffbe5062e42&format=json"
+        url = "https://comicvine.gamespot.com/api/volume/4050-95572/?api_key=dcb22bb374f04e7217eaca81f2fcfffbe5062e42&format=json"
         response = requests.get(url, headers=headers)
         print(url, response)
         data = response.json()
@@ -47,7 +44,6 @@ def cbzgenerator(namefile):
     archivos = glob.glob(temporal + '/**/*.*', recursive=True)
     archivos.sort()
 
-    # filename2, file_extension = os.path.splitext(filename)
     cbz = destino + '/' + my_dict['ComicInfo']['Series'] + ' (' + my_dict['ComicInfo']['Volume'] + ') Issue #' + '{:0>4}'.format(my_dict['ComicInfo']['Number']) + '.cbz'
     cbz = cbz.replace(':', '')
     zipobje = ZipFile(cbz, 'w')
@@ -61,17 +57,8 @@ def cbzgenerator(namefile):
         print('Error while deleting directory')
 
 def main():
-    path = "/media/cristian/Datos/Downloads/Comics/Scott Pilgrim (1-6) Color Edition (2012-2015) GetComics.INFO"
-    # path = "/media/cristian/Datos/Comics/Buffer/cbr"
-
-    # files = glob.glob(path + '/**/*.[cC][bB][rR]', recursive=True)
+    path = "/media/cristian/Datos/Comics/Marvel/Renew your Vows/2017"
     files2 = glob.glob(path + '/**/*.[cC][bB][zZ]', recursive=True)
-    # print(files)
-    # print(files2)
-    # for ficheros in files:
-    #     parents, filename = os.path.split(ficheros)
-    # for ficheros in files:
-    #     cbzgenerator(ficheros)
     for ficheros2 in files2:
         cbzgenerator(ficheros2)
 

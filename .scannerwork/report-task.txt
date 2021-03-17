@@ -1,0 +1,6 @@
+projectKey=e6ec64b6870c417bde1df52dd010d346af4d10ae
+serverUrl=https://sonarqube.loyhouse.net
+serverVersion=8.7.1.42226
+dashboardUrl=https://sonarqube.loyhouse.net/dashboard?id=e6ec64b6870c417bde1df52dd010d346af4d10ae
+ceTaskId=AXgon7M9lww_22dURVGB
+ceTaskUrl=https://sonarqube.loyhouse.net/api/ce/task?id=AXgon7M9lww_22dURVGB

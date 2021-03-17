@@ -7,16 +7,27 @@ import shutil
 import xml.etree.cElementTree as ET
 import glob
 from zipfile import ZipFile
+from modifieddate import datemodified
 
-def cbzgenerator(namefile):
+def cbzgenerator(namefile, origen):
+    logfile = origen + '/cbrconverter.log'
     parents, filename = os.path.split(namefile)
     temporal = parents + '/temporal'
     try:
         os.mkdir(temporal)
     except OSError:
         print ("Creation of the directory %s failed" % temporal)
-
-    patoolib.extract_archive(namefile, outdir=temporal)
+    print(namefile)
+    try:
+        patoolib.extract_archive(namefile, outdir=temporal)
+    except:
+        f = open(logfile, "a")
+        f.write("Error descomprimiendo: " + namefile + '\n')
+        f.close()
+        try:
+            shutil.rmtree(temporal)
+        except OSError:
+            print('Error while deleting directory')
     os.rename(namefile, namefile + ".extraido")
     archivos = glob.glob(temporal + '/**/*.*', recursive=True)
     archivos.sort()
@@ -25,6 +36,7 @@ def cbzgenerator(namefile):
     cbz = parents + '/' + filename2 + '.cbz.new'
     zipobje = ZipFile(cbz, 'w')
     for archivos2 in archivos:
+        datemodified(archivos2)
         ruta, nombrearchivo = os.path.split(archivos2)
         zipobje.write(archivos2, basename(nombrearchivo))
     zipobje.close()
@@ -34,7 +46,7 @@ def cbzgenerator(namefile):
         print('Error while deleting directory')
 
 def main():
-    path = "/media/cristian/Datos/Comics/Marvel/Spider-Man (2019)"
+    path = "/media/cristian/Datos/Comics/Marvel/comictagger"
     # path = "/media/cristian/Datos/Comics/Buffer/cbr"
 
     files = glob.glob(path + '/**/*.[cC][bB][rR]', recursive=True)
@@ -44,9 +56,9 @@ def main():
     # for ficheros in files:
     #     parents, filename = os.path.split(ficheros)
     for ficheros in files:
-        cbzgenerator(ficheros)
+        cbzgenerator(ficheros,path)
     for ficheros2 in files2:
-        cbzgenerator(ficheros2)
+        cbzgenerator(ficheros2,path)
 
 if __name__ == "__main__":
     main()
