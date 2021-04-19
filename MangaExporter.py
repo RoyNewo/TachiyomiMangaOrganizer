@@ -187,7 +187,7 @@ def organizer(elemento, dic, finalpath, mensaj, mensaj2, history):
     numero = ''
     fecha = ''
     cadena = elemento[1].lower().replace('ch.', 'ch ').replace(':', ' ').replace(u'núm.', 'num ').replace(u'ó', 'o').replace(u'á', 'a').replace(u'́é', 'e').replace(u'í', 'i').replace(u'ú', 'u').replace(
-        u'ñ', 'n').replace(u'é', 'e').replace(u'“', '').replace(u'”', '').replace(u'«', '').replace(u'»', '').replace(u'ô', 'o').replace(u'â', 'a').replace('.hu', '').replace('.lr', '').replace('shueisha_', '')
+        u'ñ', 'n').replace(u'é', 'e').replace(u'“', '').replace(u'”', '').replace(u'«', '').replace(u'»', '').replace(u'ô', 'o').replace(u'â', 'a').replace('.hu', '').replace('.lr', '').replace('shueisha_', '').replace('mangakakalot.com_','').replace('_','')
     # print(cadena)
     palabra = 0
     primero = False

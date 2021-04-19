@@ -46,7 +46,7 @@ def cbzgenerator(namefile, origen):
         print('Error while deleting directory')
 
 def main():
-    path = "/media/cristian/Datos/Comics/Marvel/comictagger"
+    path = "/media/cristian/Datos/Downloads/Comics"
     # path = "/media/cristian/Datos/Comics/Buffer/cbr"
 
     files = glob.glob(path + '/**/*.[cC][bB][rR]', recursive=True)

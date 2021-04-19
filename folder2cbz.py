@@ -5,7 +5,7 @@ from zipfile import ZipFile
 import shutil
 
 def main():
-    path = '/media/cristian/Datos/Comics/Marvel/comictagger/Guia de Lectura Marvel Vol 4/01 Thor Ragnarok/Thor #71-74'
+    path = '/media/cristian/Datos/Downloads/Comics/Okko/cbz'
     directorios=os.listdir(path)
     for dir in directorios:
         path2 = path + '/' + dir
