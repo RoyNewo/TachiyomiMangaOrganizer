@@ -1,7 +1,7 @@
 beautifulsoup4==4.9.3
 patool==1.12
 pdf2image==1.14.0
-pipenv==2020.11.15
+pipenv==2022.1.8
 pure-python-adb==0.3.0.dev0
 python-telegram-bot==13.1
 python3-nmap==1.5.0
